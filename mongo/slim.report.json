@@ -8,39 +8,71 @@
     "display_name": "Ubuntu 18.04.6 LTS"
   },
   "type": "build",
-  "state": "error",
+  "state": "done",
   "target_reference": "mongo:5.0.8",
   "system": {
-    "type": "",
-    "release": "",
+    "type": "Linux",
+    "release": "4.15.0-176-generic",
     "distro": {
-      "name": "",
-      "version": "",
-      "display_name": ""
+      "name": "Ubuntu",
+      "version": "20.04",
+      "display_name": "Ubuntu 20.04.4 LTS"
     }
   },
   "source_image": {
     "identity": {
-      "id": ""
+      "id": "sha256:96c85f49715a19320f201ed70f73f8ce67962200a3e798dec12111fac170b6da",
+      "tags": [
+        "5.0.8",
+        "latest"
+      ],
+      "names": [
+        "mongo:5.0.8",
+        "mongo:latest"
+      ],
+      "digests": [
+        "sha256:50d8918de7b076feceb9ba1ee264afd5f67fb4baaff07949f3b9de92cdca79c2"
+      ],
+      "full_digests": [
+        "mongo@sha256:50d8918de7b076feceb9ba1ee264afd5f67fb4baaff07949f3b9de92cdca79c2"
+      ]
     },
-    "size": 0,
-    "size_human": "",
-    "create_time": "",
-    "docker_version": "",
-    "architecture": "",
+    "size": 690201476,
+    "size_human": "690 MB",
+    "create_time": "2022-05-23T23:32:01Z",
+    "docker_version": "20.10.12",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "27017/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/data/db",
+      "/data/configdb"
+    ],
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.12",
+      "JSYAML_VERSION=3.13.1",
+      "MONGO_PACKAGE=mongodb-org",
+      "MONGO_REPO=repo.mongodb.org",
+      "MONGO_MAJOR=5.0",
+      "MONGO_VERSION=5.0.8",
+      "HOME=/data/db"
+    ],
     "container_entry": {
       "exe_path": ""
     }
   },
-  "minified_image_size": 0,
-  "minified_image_size_human": "",
-  "minified_image": "",
-  "minified_image_has_data": false,
-  "minified_by": 0,
-  "artifact_location": "",
-  "container_report_name": "",
-  "seccomp_profile_name": "",
-  "apparmor_profile_name": "",
+  "minified_image_size": 243309712,
+  "minified_image_size_human": "243 MB",
+  "minified_image": "mongo.slim",
+  "minified_image_has_data": true,
+  "minified_by": 2.8367197935773314,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/96c85f49715a19320f201ed70f73f8ce67962200a3e798dec12111fac170b6da/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "mongo-seccomp.json",
+  "apparmor_profile_name": "mongo-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
