@@ -1,0 +1,338 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.37.6|26a36c88a94c677efd734e874ba081dabb84a224|2022-04-23_06:03:56AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "18.04",
+    "display_name": "Ubuntu 18.04.6 LTS"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "postgres:14.3-alpine",
+  "system": {
+    "type": "Linux",
+    "release": "4.15.0-176-generic",
+    "distro": {
+      "name": "Alpine Linux",
+      "version": "3.16.0",
+      "display_name": "Alpine Linux v3.16"
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:ea498678e2bdf1e6e57e25a37555e217c0aaed625ad65742fa783e8141e9613d",
+      "tags": [
+        "14.3-alpine"
+      ],
+      "names": [
+        "postgres:14.3-alpine"
+      ],
+      "digests": [
+        "sha256:c75bb07ca2cc3175a6187cc57dc228ae4b57d132e4b3f893ce50001fa6ca98af"
+      ],
+      "full_digests": [
+        "postgres@sha256:c75bb07ca2cc3175a6187cc57dc228ae4b57d132e4b3f893ce50001fa6ca98af"
+      ]
+    },
+    "size": 188716879,
+    "size_human": "189 MB",
+    "create_time": "2022-05-25T20:41:00Z",
+    "docker_version": "20.10.12",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "5432/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/var/lib/postgresql/data"
+    ],
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG=en_US.utf8",
+      "PG_MAJOR=14",
+      "PG_VERSION=14.3",
+      "PG_SHA256=279057368bf59a919c05ada8f95c5e04abb43e74b9a2a69c3d46a20e07a9af38",
+      "PGDATA=/var/lib/postgresql/data"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 194957347,
+  "minified_image_size_human": "195 MB",
+  "minified_image": "postgres.slim",
+  "minified_image_has_data": true,
+  "minified_by": 0.9679905984769068,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/ea498678e2bdf1e6e57e25a37555e217c0aaed625ad65742fa783e8141e9613d/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "postgres-seccomp.json",
+  "apparmor_profile_name": "postgres-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:ea498678e2bdf1e6e57e25a37555e217c0aaed625ad65742fa783e8141e9613d",
+      "full_name": "postgres:14.3-alpine",
+      "repo_name": "postgres",
+      "version_tag": "14.3-alpine",
+      "raw_tags": [
+        "postgres:14.3-alpine"
+      ],
+      "create_time": "2022-05-25T20:41:00Z",
+      "new_size": 188716879,
+      "new_size_human": "189 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-05-23T19:19:30Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 5529096,
+          "size_human": "5.5 MB",
+          "params": "file:8e81116368669ed3dd361bc898d61bff249f524139a239fdaf3ec46869a39921 in /",
+          "command_snippet": "ADD file:8e81116368669ed3dd361bc898d61bff249...",
+          "command_all": "ADD file:8e81116368669ed3dd361bc898d61bff249f524139a239fdaf3ec46869a39921 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-05-23T19:19:31Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/bin/sh\"]\n",
+          "command_snippet": "CMD [\"/bin/sh\"]\n",
+          "command_all": "CMD [\"/bin/sh\"]\n"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:33:22Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 4709,
+          "size_human": "4.7 kB",
+          "command_snippet": "RUN set -eux; \taddgroup -g 70 -S postgres; \t...",
+          "command_all": "RUN set -eux; \taddgroup -g 70 -S postgres; \tadduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres; \tmkdir -p /var/lib/postgresql; \tchown -R postgres:postgres /var/lib/postgresql",
+          "system_commands": [
+            "set -eux",
+            "addgroup -g 70 -S postgres",
+            "adduser -u 70 -S -D -G postgres -H -h /var/lib/postgresql -s /bin/sh postgres",
+            "mkdir -p /var/lib/postgresql",
+            "chown -R postgres:postgres /var/lib/postgresql"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-25T20:33:22Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "LANG=en_US.utf8",
+          "command_snippet": "ENV LANG=en_US.utf8",
+          "command_all": "ENV LANG=en_US.utf8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:33:23Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN mkdir /docker-entrypoint-initdb.d",
+          "command_all": "RUN mkdir /docker-entrypoint-initdb.d",
+          "system_commands": [
+            "mkdir /docker-entrypoint-initdb.d"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-25T20:37:47Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PG_MAJOR=14",
+          "command_snippet": "ENV PG_MAJOR=14",
+          "command_all": "ENV PG_MAJOR=14"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-25T20:37:47Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PG_VERSION=14.3",
+          "command_snippet": "ENV PG_VERSION=14.3",
+          "command_all": "ENV PG_VERSION=14.3"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-25T20:37:47Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PG_SHA256=279057368bf59a919c05ada8f95c5e04abb43e74b9a2a69c3d46a20e07a9af38",
+          "command_snippet": "ENV PG_SHA256=279057368bf59a919c05ada8f95c5e...",
+          "command_all": "ENV PG_SHA256=279057368bf59a919c05ada8f95c5e04abb43e74b9a2a69c3d46a20e07a9af38"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:40:57Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 183113566,
+          "size_human": "183 MB",
+          "command_snippet": "RUN set -eux; \t\twget -O postgresql.tar.bz2 \"...",
+          "command_all": "RUN set -eux; \t\twget -O postgresql.tar.bz2 \"https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2\"; \techo \"$PG_SHA256 *postgresql.tar.bz2\" | sha256sum -c -; \tmkdir -p /usr/src/postgresql; \ttar \t\t--extract \t\t--file postgresql.tar.bz2 \t\t--directory /usr/src/postgresql \t\t--strip-components 1 \t; \trm postgresql.tar.bz2; \t\tapk add --no-cache --virtual .build-deps \t\tbison \t\tcoreutils \t\tdpkg-dev dpkg \t\tflex \t\tgcc \t\tkrb5-dev \t\tlibc-dev \t\tlibedit-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlinux-headers \t\tllvm-dev clang g++ \t\tmake \t\topenldap-dev \t\topenssl-dev \t\tperl-dev \t\tperl-ipc-run \t\tperl-utils \t\tpython3-dev \t\ttcl-dev \t\tutil-linux-dev \t\tzlib-dev \t\ticu-dev \t\tlz4-dev \t; \t\tcd /usr/src/postgresql; \tawk '$1 == \"#define\" && \\\n\t$2 == \"DEFAULT_PGSOCKET_DIR\" && \\\n\t$3 == \"\\\"/tmp\\\"\" { $3 = \"\\\"/var/run/postgresql\\\"\"; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; \tgrep '/var/run/postgresql' src/include/pg_config_manual.h.new; \tmv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \twget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; \twget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-integer-datetimes \t\t--enable-thread-safety \t\t--enable-tap-tests \t\t--disable-rpath \t\t--with-uuid=e2fs \t\t--with-gnu-ld \t\t--with-pgport=5432 \t\t--with-system-tzdata=/usr/share/zoneinfo \t\t--prefix=/usr/local \t\t--with-includes=/usr/local/include \t\t--with-libraries=/usr/local/lib \t\t--with-krb5 \t\t--with-gssapi \t\t--with-ldap \t\t--with-tcl \t\t--with-perl \t\t--with-python \t\t--with-openssl \t\t--with-libxml \t\t--with-libxslt \t\t--with-icu \t\t--with-llvm \t\t--with-lz4 \t; \tmake -j \"$(nproc)\" world; \tmake install-world; \tmake -C contrib install; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t\t\t| grep -v -e perl -e python -e tcl \t)\"; \tapk add --no-cache --virtual .postgresql-rundeps \t\t$runDeps \t\tbash \t\tsu-exec \t\ttzdata \t\tzstd \t; \tapk del --no-network .build-deps; \tcd /; \trm -rf \t\t/usr/src/postgresql \t\t/usr/local/share/doc \t\t/usr/local/share/man \t; \t\tpostgres --version",
+          "system_commands": [
+            "set -eux; wget -O postgresql.tar.bz2 \"https://ftp.postgresql.org/pub/source/v$PG_VERSION/postgresql-$PG_VERSION.tar.bz2\"; echo \"$PG_SHA256 *postgresql.tar.bz2\" | sha256sum -c -; mkdir -p /usr/src/postgresql; tar --extract --file postgresql.tar.bz2 --directory /usr/src/postgresql --strip-components 1 ; rm postgresql.tar.bz2; apk add --no-cache --virtual .build-deps bison coreutils dpkg-dev dpkg flex gcc krb5-dev libc-dev libedit-dev libxml2-dev libxslt-dev linux-headers llvm-dev clang g++ make openldap-dev openssl-dev perl-dev perl-ipc-run perl-utils python3-dev tcl-dev util-linux-dev zlib-dev icu-dev lz4-dev ; cd /usr/src/postgresql; awk '$1 == \"#define\"",
+            "$2 == \"DEFAULT_PGSOCKET_DIR\"",
+            "$3 == \"\"/tmp\"\" { $3 = \"\"/var/run/postgresql\"\"; print; next } { print }' src/include/pg_config_manual.h > src/include/pg_config_manual.h.new; grep '/var/run/postgresql' src/include/pg_config_manual.h.new; mv src/include/pg_config_manual.h.new src/include/pg_config_manual.h; gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; wget -O config/config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess?id=7d3d27baf8107b630586c962c057e22149653deb'; wget -O config/config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub?id=7d3d27baf8107b630586c962c057e22149653deb'; ./configure --build=\"$gnuArch\" --enable-integer-datetimes --enable-thread-safety --enable-tap-tests --disable-rpath --with-uuid=e2fs --with-gnu-ld --with-pgport=5432 --with-system-tzdata=/usr/share/zoneinfo --prefix=/usr/local --with-includes=/usr/local/include --with-libraries=/usr/local/lib --with-krb5 --with-gssapi --with-ldap --with-tcl --with-perl --with-python --with-openssl --with-libxml --with-libxslt --with-icu --with-llvm --with-lz4 ; make -j \"$(nproc)\" world; make install-world; make -C contrib install; runDeps=\"$( scanelf --needed --nobanner --format '%n#p' --recursive /usr/local | tr ',' 'n' | sort -u | awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' | grep -v -e perl -e python -e tcl )\"; apk add --no-cache --virtual .postgresql-rundeps $runDeps bash su-exec tzdata zstd ; apk del --no-network .build-deps; cd /; rm -rf /usr/src/postgresql /usr/local/share/doc /usr/local/share/man ; postgres --version"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:40:58Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 57386,
+          "size_human": "57 kB",
+          "command_snippet": "RUN set -eux; \tcp -v /usr/local/share/postgr...",
+          "command_all": "RUN set -eux; \tcp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig; \tsed -ri \"s!^#?(listen_addresses)\\s*=\\s*\\S+.*!\\1 = '*'!\" /usr/local/share/postgresql/postgresql.conf.sample; \tgrep -F \"listen_addresses = '*'\" /usr/local/share/postgresql/postgresql.conf.sample",
+          "system_commands": [
+            "set -eux",
+            "cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/local/share/postgresql/postgresql.conf.sample.orig",
+            "sed -ri \"s!^#?(listen_addresses)s*=s*S+.*!1 = '*'!\" /usr/local/share/postgresql/postgresql.conf.sample",
+            "grep -F \"listen_addresses = '*'\" /usr/local/share/postgresql/postgresql.conf.sample"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:40:58Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN mkdir -p /var/run/postgresql && \\\n\tchown...",
+          "command_all": "RUN mkdir -p /var/run/postgresql && \\\n\tchown -R postgres:postgres /var/run/postgresql && \\\n\tchmod 2777 /var/run/postgresql",
+          "system_commands": [
+            "mkdir -p /var/run/postgresql",
+            "chown -R postgres:postgres /var/run/postgresql",
+            "chmod 2777 /var/run/postgresql"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-25T20:40:58Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PGDATA=/var/lib/postgresql/data",
+          "command_snippet": "ENV PGDATA=/var/lib/postgresql/data",
+          "command_all": "ENV PGDATA=/var/lib/postgresql/data"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN mkdir -p \"$PGDATA\" && \\\n\tchown -R postgr...",
+          "command_all": "RUN mkdir -p \"$PGDATA\" && \\\n\tchown -R postgres:postgres \"$PGDATA\" && \\\n\tchmod 777 \"$PGDATA\"",
+          "system_commands": [
+            "mkdir -p \"$PGDATA\"",
+            "chown -R postgres:postgres \"$PGDATA\"",
+            "chmod 777 \"$PGDATA\""
+          ]
+        },
+        {
+          "type": "VOLUME",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[/var/lib/postgresql/data]",
+          "command_snippet": "VOLUME [/var/lib/postgresql/data]",
+          "command_all": "VOLUME [/var/lib/postgresql/data]"
+        },
+        {
+          "type": "COPY",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 12122,
+          "size_human": "12 kB",
+          "params": "file:e8928645623137de410cce68a2aa3b22f07a64e6391025598a60f3e461c606a3 in /usr/local/bin/",
+          "command_snippet": "COPY file:e8928645623137de410cce68a2aa3b22f0...",
+          "command_all": "COPY file:e8928645623137de410cce68a2aa3b22f07a64e6391025598a60f3e461c606a3 /usr/local/bin/",
+          "target": "/usr/local/bin/",
+          "source_type": "file"
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]\n",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n"
+        },
+        {
+          "type": "STOPSIGNAL",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "SIGINT",
+          "command_snippet": "STOPSIGNAL SIGINT",
+          "command_all": "STOPSIGNAL SIGINT"
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2022-05-25T20:40:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "5432",
+          "command_snippet": "EXPOSE 5432",
+          "command_all": "EXPOSE 5432"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-05-25T20:41:00Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"postgres\"]\n",
+          "command_snippet": "CMD [\"postgres\"]\n",
+          "command_all": "CMD [\"postgres\"]\n",
+          "raw_tags": [
+            "postgres:14.3-alpine"
+          ]
+        }
+      ]
+    }
+  ]
+}

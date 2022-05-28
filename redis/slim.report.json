@@ -1,0 +1,313 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.37.6|26a36c88a94c677efd734e874ba081dabb84a224|2022-04-23_06:03:56AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "18.04",
+    "display_name": "Ubuntu 18.04.6 LTS"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "redis:latest",
+  "system": {
+    "type": "Linux",
+    "release": "4.15.0-176-generic",
+    "distro": {
+      "name": "Debian GNU/Linux",
+      "version": "11",
+      "display_name": "Debian GNU/Linux 11 (bullseye)"
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:a09124a3f90d65e6889a96041aa94a7a74ef30b965e1634887e05bd972ea02b9",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "redis:latest"
+      ],
+      "digests": [
+        "sha256:69fa365a017ea2660c8cedd02afba2e52a476ebee81e3b0454e265166c028147"
+      ],
+      "full_digests": [
+        "redis@sha256:69fa365a017ea2660c8cedd02afba2e52a476ebee81e3b0454e265166c028147"
+      ]
+    },
+    "size": 116785101,
+    "size_human": "117 MB",
+    "create_time": "2022-05-25T22:04:35Z",
+    "docker_version": "20.10.12",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "6379/tcp"
+    ],
+    "os": "linux",
+    "volumes": [
+      "/data"
+    ],
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "GOSU_VERSION=1.14",
+      "REDIS_VERSION=7.0.0",
+      "REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.0.tar.gz",
+      "REDIS_DOWNLOAD_SHA=284d8bd1fd85d6a55a05ee4e7c31c31977ad56cbf344ed83790beeb148baa720"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 33274165,
+  "minified_image_size_human": "33 MB",
+  "minified_image": "redis.slim",
+  "minified_image_has_data": true,
+  "minified_by": 3.509783070439183,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/a09124a3f90d65e6889a96041aa94a7a74ef30b965e1634887e05bd972ea02b9/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "redis-seccomp.json",
+  "apparmor_profile_name": "redis-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:a09124a3f90d65e6889a96041aa94a7a74ef30b965e1634887e05bd972ea02b9",
+      "full_name": "redis:latest",
+      "repo_name": "redis",
+      "version_tag": "latest",
+      "raw_tags": [
+        "redis:latest"
+      ],
+      "create_time": "2022-05-25T22:04:35Z",
+      "new_size": 116785101,
+      "new_size_human": "117 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-05-11T01:20:16Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 80410380,
+          "size_human": "80 MB",
+          "params": "file:4a0bb88956083aa56032fdd9601d9b66c39b18c896ba35ea33594cd75621640a in /",
+          "command_snippet": "ADD file:4a0bb88956083aa56032fdd9601d9b66c39...",
+          "command_all": "ADD file:4a0bb88956083aa56032fdd9601d9b66c39b18c896ba35ea33594cd75621640a /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-05-11T01:20:16Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-11T15:18:40Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 328566,
+          "size_human": "329 kB",
+          "command_snippet": "RUN groupadd -r -g 999 redis && \\\n\tuseradd -...",
+          "command_all": "RUN groupadd -r -g 999 redis && \\\n\tuseradd -r -g redis -u 999 redis",
+          "system_commands": [
+            "groupadd -r -g 999 redis",
+            "useradd -r -g redis -u 999 redis"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-11T15:18:40Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "GOSU_VERSION=1.14",
+          "command_snippet": "ENV GOSU_VERSION=1.14",
+          "command_all": "ENV GOSU_VERSION=1.14"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-11T15:18:52Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 4125045,
+          "size_human": "4.1 MB",
+          "command_snippet": "RUN set -eux; \tsavedAptMark=\"$(apt-mark show...",
+          "command_all": "RUN set -eux; \tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; \trm -rf /var/lib/apt/lists/*; \tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true",
+          "system_commands": [
+            "set -eux",
+            "savedAptMark=\"$(apt-mark showmanual)\"",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget",
+            "rm -rf /var/lib/apt/lists/*",
+            "dpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"",
+            "wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"",
+            "wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"",
+            "export GNUPGHOME=\"$(mktemp -d)\"",
+            "gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4",
+            "gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu",
+            "gpgconf --kill all",
+            "rm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc",
+            "apt-mark auto '.*' > /dev/null",
+            "[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null",
+            "apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+            "chmod +x /usr/local/bin/gosu",
+            "gosu --version",
+            "gosu nobody true"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-11T15:18:52Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "REDIS_VERSION=7.0.0",
+          "command_snippet": "ENV REDIS_VERSION=7.0.0",
+          "command_all": "ENV REDIS_VERSION=7.0.0"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-11T15:18:52Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.0.tar.gz",
+          "command_snippet": "ENV REDIS_DOWNLOAD_URL=http://download.redis...",
+          "command_all": "ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.0.tar.gz"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-11T15:18:52Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "REDIS_DOWNLOAD_SHA=284d8bd1fd85d6a55a05ee4e7c31c31977ad56cbf344ed83790beeb148baa720",
+          "command_snippet": "ENV REDIS_DOWNLOAD_SHA=284d8bd1fd85d6a55a05e...",
+          "command_all": "ENV REDIS_DOWNLOAD_SHA=284d8bd1fd85d6a55a05ee4e7c31c31977ad56cbf344ed83790beeb148baa720"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-11T15:19:36Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 31920449,
+          "size_human": "32 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\twget \t\t\t\tdpkg-dev \t\tgcc \t\tlibc6-dev \t\tlibssl-dev \t\tmake \t; \trm -rf /var/lib/apt/lists/*; \t\twget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; \techo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; \tmkdir -p /usr/src/redis; \ttar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; \trm redis.tar.gz; \t\tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; \tsed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!\\10\\2!' /usr/src/redis/src/config.c; \tgrep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \textraJemallocConfigureFlags=\"--build=$gnuArch\"; \tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; \t\t*) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; \tesac; \textraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; \tgrep -F 'cd jemalloc && \\\n\t./configure ' /usr/src/redis/deps/Makefile; \tsed -ri 's!cd jemalloc && \\\n\t./configure !&'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; \tgrep -F \"cd jemalloc && \\\n\t./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; \t\texport BUILD_TLS=yes; \tmake -C /usr/src/redis -j \"$(nproc)\" all; \tmake -C /usr/src/redis install; \t\tserverMd5=\"$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)\"; export serverMd5; \tfind /usr/local/bin/redis* -maxdepth 0 \t\t-type f -not -name redis-server \t\t-exec sh -eux -c ' \t\t\tmd5=\"$(md5sum \"$1\" | cut -d\" \" -f1)\"; \t\t\ttest \"$md5\" = \"$serverMd5\"; \t\t' -- '{}' ';' \t\t-exec ln -svfT 'redis-server' '{}' ';' \t; \t\trm -r /usr/src/redis; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tfind /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\tredis-cli --version; \tredis-server --version",
+          "system_commands": [
+            "set -eux; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends ca-certificates wget dpkg-dev gcc libc6-dev libssl-dev make ; rm -rf /var/lib/apt/lists/*; wget -O redis.tar.gz \"$REDIS_DOWNLOAD_URL\"; echo \"$REDIS_DOWNLOAD_SHA *redis.tar.gz\" | sha256sum -c -; mkdir -p /usr/src/redis; tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; rm redis.tar.gz; grep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; sed -ri 's!^( *createBoolConfig[(]\"protected-mode\",.*, *)1( *,.*[)],)$!102!' /usr/src/redis/src/config.c; grep -E '^ *createBoolConfig[(]\"protected-mode\",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; extraJemallocConfigureFlags=\"--build=$gnuArch\"; dpkgArch=\"$(dpkg --print-architecture)\"; case \"${dpkgArch##*-}\" in amd64 | i386 | x32) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=12\" ;; *) extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-page=16\" ;; esac; extraJemallocConfigureFlags=\"$extraJemallocConfigureFlags --with-lg-hugepage=21\"; grep -F 'cd jemalloc",
+            "./configure ' /usr/src/redis/deps/Makefile; sed -ri 's!cd jemalloc",
+            "./configure !&'\"$extraJemallocConfigureFlags\"' !' /usr/src/redis/deps/Makefile; grep -F \"cd jemalloc",
+            "./configure $extraJemallocConfigureFlags \" /usr/src/redis/deps/Makefile; export BUILD_TLS=yes; make -C /usr/src/redis -j \"$(nproc)\" all; make -C /usr/src/redis install; serverMd5=\"$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)\"; export serverMd5; find /usr/local/bin/redis* -maxdepth 0 -type f -not -name redis-server -exec sh -eux -c ' md5=\"$(md5sum \"$1\" | cut -d\" \" -f1)\"; test \"$md5\" = \"$serverMd5\"; ' -- '{}' ';' -exec ln -svfT 'redis-server' '{}' ';' ; rm -r /usr/src/redis; apt-mark auto '.*' > /dev/null; [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; find /usr/local -type f -executable -exec ldd '{}' ';' | awk '/=>/ { print $(NF-1) }' | sort -u | xargs -r dpkg-query --search | cut -d: -f1 | sort -u | xargs -r apt-mark manual ; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; redis-cli --version; redis-server --version"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-11T15:19:37Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN mkdir /data && \\\n\tchown redis:redis /dat...",
+          "command_all": "RUN mkdir /data && \\\n\tchown redis:redis /data",
+          "system_commands": [
+            "mkdir /data",
+            "chown redis:redis /data"
+          ]
+        },
+        {
+          "type": "VOLUME",
+          "time": "2022-05-11T15:19:37Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[/data]",
+          "command_snippet": "VOLUME [/data]",
+          "command_all": "VOLUME [/data]"
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2022-05-11T15:19:37Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "/data",
+          "command_snippet": "WORKDIR /data",
+          "command_all": "WORKDIR /data",
+          "system_commands": [
+            "mkdir -p /data"
+          ]
+        },
+        {
+          "type": "COPY",
+          "time": "2022-05-25T22:04:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 661,
+          "size_human": "661 B",
+          "params": "file:e873a0e3c13001b5e1c63f9dbe60cc65722af522671787f68b8e8cbcae7d02ac in /usr/local/bin/",
+          "command_snippet": "COPY file:e873a0e3c13001b5e1c63f9dbe60cc6572...",
+          "command_all": "COPY file:e873a0e3c13001b5e1c63f9dbe60cc65722af522671787f68b8e8cbcae7d02ac /usr/local/bin/",
+          "target": "/usr/local/bin/",
+          "source_type": "file"
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2022-05-25T22:04:35Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]\n",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n"
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2022-05-25T22:04:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "6379",
+          "command_snippet": "EXPOSE 6379",
+          "command_all": "EXPOSE 6379"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-05-25T22:04:35Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"redis-server\"]\n",
+          "command_snippet": "CMD [\"redis-server\"]\n",
+          "command_all": "CMD [\"redis-server\"]\n",
+          "raw_tags": [
+            "redis:latest"
+          ]
+        }
+      ]
+    }
+  ]
+}

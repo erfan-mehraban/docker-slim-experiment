@@ -1,0 +1,358 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.37.6|26a36c88a94c677efd734e874ba081dabb84a224|2022-04-23_06:03:56AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "18.04",
+    "display_name": "Ubuntu 18.04.6 LTS"
+  },
+  "type": "build",
+  "state": "error",
+  "target_reference": "mongo:5.0.8",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": ""
+    },
+    "size": 0,
+    "size_human": "",
+    "create_time": "",
+    "docker_version": "",
+    "architecture": "",
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 0,
+  "minified_image_size_human": "",
+  "minified_image": "",
+  "minified_image_has_data": false,
+  "minified_by": 0,
+  "artifact_location": "",
+  "container_report_name": "",
+  "seccomp_profile_name": "",
+  "apparmor_profile_name": "",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:96c85f49715a19320f201ed70f73f8ce67962200a3e798dec12111fac170b6da",
+      "full_name": "mongo:5.0.8",
+      "repo_name": "mongo",
+      "version_tag": "5.0.8",
+      "raw_tags": [
+        "mongo:5.0.8",
+        "mongo:latest"
+      ],
+      "create_time": "2022-05-23T23:32:01Z",
+      "new_size": 690201476,
+      "new_size_human": "690 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-04-29T23:20:59Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 72761281,
+          "size_human": "73 MB",
+          "params": "file:7009ad0ee0bbe5ed7f381792e07347e260e6896aeee0d80597808065120fa96b in /",
+          "command_snippet": "ADD file:7009ad0ee0bbe5ed7f381792e07347e260e...",
+          "command_all": "ADD file:7009ad0ee0bbe5ed7f381792e07347e260e6896aeee0d80597808065120fa96b /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-04-29T23:20:59Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:01Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 328579,
+          "size_human": "329 kB",
+          "command_snippet": "RUN set -eux; \tgroupadd --gid 999 --system m...",
+          "command_all": "RUN set -eux; \tgroupadd --gid 999 --system mongodb; \tuseradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb; \tmkdir -p /data/db /data/configdb; \tchown -R mongodb:mongodb /data/db /data/configdb",
+          "system_commands": [
+            "set -eux",
+            "groupadd --gid 999 --system mongodb",
+            "useradd --uid 999 --system --gid mongodb --home-dir /data/db mongodb",
+            "mkdir -p /data/db /data/configdb",
+            "chown -R mongodb:mongodb /data/db /data/configdb"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:11Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 7771798,
+          "size_human": "7.8 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tjq \t\tnumactl \t; \tif ! command -v ps > /dev/null; then \t\tapt-get install -y --no-install-recommends procps; \tfi; \trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates jq numactl",
+            "if ! command -v ps > /dev/null",
+            "then apt-get install -y --no-install-recommends procps",
+            "fi",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:31:11Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "GOSU_VERSION=1.12",
+          "command_snippet": "ENV GOSU_VERSION=1.12",
+          "command_all": "ENV GOSU_VERSION=1.12"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:31:11Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "JSYAML_VERSION=3.13.1",
+          "command_snippet": "ENV JSYAML_VERSION=3.13.1",
+          "command_all": "ENV JSYAML_VERSION=3.13.1"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:29Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 15095181,
+          "size_human": "15 MB",
+          "command_snippet": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark show...",
+          "command_all": "RUN set -ex; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\twget \t; \tif ! command -v gpg > /dev/null; then \t\tapt-get install -y --no-install-recommends gnupg dirmngr; \t\tsavedAptMark=\"$savedAptMark gnupg dirmngr\"; \telif gpg --version | grep -q '^gpg (GnuPG) 1\\.'; then \t\tapt-get install -y --no-install-recommends gnupg-curl; \tfi; \trm -rf /var/lib/apt/lists/*; \t\tdpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; \twget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; \twget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \tgpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; \t\twget -O /js-yaml.js \"https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js\"; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\tchmod +x /usr/local/bin/gosu; \tgosu --version; \tgosu nobody true",
+          "system_commands": [
+            "set -ex; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends wget ; if ! command -v gpg > /dev/null; then apt-get install -y --no-install-recommends gnupg dirmngr; savedAptMark=\"$savedAptMark gnupg dirmngr\"; elif gpg --version | grep -q '^gpg (GnuPG) 1.'; then apt-get install -y --no-install-recommends gnupg-curl; fi; rm -rf /var/lib/apt/lists/*; dpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\"; wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\"; wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\"; export GNUPGHOME=\"$(mktemp -d)\"; gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; command -v gpgconf",
+            "gpgconf --kill all || :; rm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc; wget -O /js-yaml.js \"https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js\"; apt-mark auto '.*' > /dev/null; apt-mark manual $savedAptMark > /dev/null; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; chmod +x /usr/local/bin/gosu; gosu --version; gosu nobody true"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:29Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN mkdir /docker-entrypoint-initdb.d",
+          "command_all": "RUN mkdir /docker-entrypoint-initdb.d",
+          "system_commands": [
+            "mkdir /docker-entrypoint-initdb.d"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:31Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 1162,
+          "size_human": "1.2 kB",
+          "command_snippet": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)...",
+          "command_all": "RUN set -ex; \texport GNUPGHOME=\"$(mktemp -d)\"; \tset -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; \tfor key; do \t\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \tdone; \tmkdir -p /etc/apt/keyrings; \tgpg --batch --export \"$@\" > /etc/apt/keyrings/mongodb.gpg; \tcommand -v gpgconf && \\\n\tgpgconf --kill all || :; \trm -r \"$GNUPGHOME\"",
+          "system_commands": [
+            "set -ex; export GNUPGHOME=\"$(mktemp -d)\"; set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; for key; do gpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; done; mkdir -p /etc/apt/keyrings; gpg --batch --export \"$@\" > /etc/apt/keyrings/mongodb.gpg; command -v gpgconf",
+            "gpgconf --kill all || :; rm -r \"$GNUPGHOME\""
+          ]
+        },
+        {
+          "type": "ARG",
+          "time": "2022-05-23T23:31:31Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "MONGO_PACKAGE=mongodb-org",
+          "command_snippet": "ARG MONGO_PACKAGE=mongodb-org",
+          "command_all": "ARG MONGO_PACKAGE=mongodb-org"
+        },
+        {
+          "type": "ARG",
+          "time": "2022-05-23T23:31:31Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "MONGO_REPO=repo.mongodb.org",
+          "command_snippet": "ARG MONGO_REPO=repo.mongodb.org",
+          "command_all": "ARG MONGO_REPO=repo.mongodb.org"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:31:31Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org",
+          "command_snippet": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=rep...",
+          "command_all": "ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:31:31Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "MONGO_MAJOR=5.0",
+          "command_snippet": "ENV MONGO_MAJOR=5.0",
+          "command_all": "ENV MONGO_MAJOR=5.0"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:32Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 116,
+          "size_human": "116 B",
+          "command_snippet": "RUN echo \"deb [ signed-by=/etc/apt/keyrings/...",
+          "command_all": "RUN echo \"deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse\" | tee \"/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list\"",
+          "system_commands": [
+            "echo \"deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse\" | tee \"/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list\""
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:31:32Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "MONGO_VERSION=5.0.8",
+          "command_snippet": "ENV MONGO_VERSION=5.0.8",
+          "command_all": "ENV MONGO_VERSION=5.0.8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-05-23T23:31:59Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 594229301,
+          "size_human": "594 MB",
+          "command_snippet": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noni...",
+          "command_all": "RUN set -x && \\\n\texport DEBIAN_FRONTEND=noninteractive && \\\n\tapt-get update && \\\n\tln -s /bin/true /usr/local/bin/systemctl && \\\n\tapt-get install -y \t\t${MONGO_PACKAGE}=$MONGO_VERSION \t\t${MONGO_PACKAGE}-server=$MONGO_VERSION \t\t${MONGO_PACKAGE}-shell=$MONGO_VERSION \t\t${MONGO_PACKAGE}-mongos=$MONGO_VERSION \t\t${MONGO_PACKAGE}-tools=$MONGO_VERSION && \\\n\trm -f /usr/local/bin/systemctl && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\trm -rf /var/lib/mongodb && \\\n\tmv /etc/mongod.conf /etc/mongod.conf.orig",
+          "system_commands": [
+            "set -x",
+            "export DEBIAN_FRONTEND=noninteractive",
+            "apt-get update",
+            "ln -s /bin/true /usr/local/bin/systemctl",
+            "apt-get install -y ${MONGO_PACKAGE}=$MONGO_VERSION ${MONGO_PACKAGE}-server=$MONGO_VERSION ${MONGO_PACKAGE}-shell=$MONGO_VERSION ${MONGO_PACKAGE}-mongos=$MONGO_VERSION ${MONGO_PACKAGE}-tools=$MONGO_VERSION",
+            "rm -f /usr/local/bin/systemctl",
+            "rm -rf /var/lib/apt/lists/*",
+            "rm -rf /var/lib/mongodb",
+            "mv /etc/mongod.conf /etc/mongod.conf.orig"
+          ]
+        },
+        {
+          "type": "VOLUME",
+          "time": "2022-05-23T23:32:00Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[/data/db /data/configdb]",
+          "command_snippet": "VOLUME [/data/db /data/configdb]",
+          "command_all": "VOLUME [/data/db /data/configdb]"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-05-23T23:32:00Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "HOME=/data/db",
+          "command_snippet": "ENV HOME=/data/db",
+          "command_all": "ENV HOME=/data/db"
+        },
+        {
+          "type": "COPY",
+          "time": "2022-05-23T23:32:00Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 14058,
+          "size_human": "14 kB",
+          "params": "file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/",
+          "command_snippet": "COPY file:ff519c7454e20e6f14c42932b8d6eaee06...",
+          "command_all": "COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 /usr/local/bin/",
+          "target": "/usr/local/bin/",
+          "source_type": "file"
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2022-05-23T23:32:01Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"docker-entrypoint.sh\"]\n",
+          "command_snippet": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n",
+          "command_all": "ENTRYPOINT [\"docker-entrypoint.sh\"]\n"
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2022-05-23T23:32:01Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "27017",
+          "command_snippet": "EXPOSE 27017",
+          "command_all": "EXPOSE 27017"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-05-23T23:32:01Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"mongod\"]\n",
+          "command_snippet": "CMD [\"mongod\"]\n",
+          "command_all": "CMD [\"mongod\"]\n",
+          "raw_tags": [
+            "mongo:5.0.8",
+            "mongo:latest"
+          ]
+        }
+      ]
+    }
+  ]
+}
