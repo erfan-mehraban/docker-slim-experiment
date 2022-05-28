@@ -1,0 +1,3 @@
+[submodule "mongo/mongo-perf"]
+	path = mongo/mongo-perf
+	url = https://github.com/erfan-mehraban/mongo-perf
