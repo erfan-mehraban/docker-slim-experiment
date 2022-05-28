@@ -9,35 +9,35 @@
   },
   "type": "build",
   "state": "done",
-  "target_reference": "memcached:alpine3.16",
+  "target_reference": "memcached:1.6.15",
   "system": {
     "type": "Linux",
     "release": "4.15.0-176-generic",
     "distro": {
-      "name": "Alpine Linux",
-      "version": "3.16.0",
-      "display_name": "Alpine Linux v3.16"
+      "name": "Debian GNU/Linux",
+      "version": "11",
+      "display_name": "Debian GNU/Linux 11 (bullseye)"
     }
   },
   "source_image": {
     "identity": {
-      "id": "sha256:4e3f5d6e8d61d2ec54ff3d21da1c6dbddca8f0018c8f1c1253287129fa3926d7",
+      "id": "sha256:7665ebc98caad2efd1afbce9e51f0fde93ee5395ad9f58fbad5da2ef684f8a2c",
       "tags": [
-        "alpine3.16"
+        "1.6.15"
       ],
       "names": [
-        "memcached:alpine3.16"
+        "memcached:1.6.15"
       ],
       "digests": [
-        "sha256:bab32a8a61543525190db12c2a518c3c2331656a4409185f0f4f33a506e3aae7"
+        "sha256:6f0ca693f6597609b277c2ef38ad47ecf5e50f151a923bed1306efc12bef9a85"
       ],
       "full_digests": [
-        "memcached@sha256:bab32a8a61543525190db12c2a518c3c2331656a4409185f0f4f33a506e3aae7"
+        "memcached@sha256:6f0ca693f6597609b277c2ef38ad47ecf5e50f151a923bed1306efc12bef9a85"
       ]
     },
-    "size": 7973282,
-    "size_human": "8.0 MB",
-    "create_time": "2022-05-24T19:27:19Z",
+    "size": 89159342,
+    "size_human": "89 MB",
+    "create_time": "2022-05-28T05:32:01Z",
     "docker_version": "20.10.12",
     "architecture": "amd64",
     "user": "memcache",
@@ -54,87 +54,90 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 6227821,
-  "minified_image_size_human": "6.2 MB",
+  "minified_image_size": 7723759,
+  "minified_image_size_human": "7.7 MB",
   "minified_image": "memcached.slim",
   "minified_image_has_data": true,
-  "minified_by": 1.2802683314115804,
-  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/4e3f5d6e8d61d2ec54ff3d21da1c6dbddca8f0018c8f1c1253287129fa3926d7/artifacts",
+  "minified_by": 11.543516829046583,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/7665ebc98caad2efd1afbce9e51f0fde93ee5395ad9f58fbad5da2ef684f8a2c/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "memcached-seccomp.json",
   "apparmor_profile_name": "memcached-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:4e3f5d6e8d61d2ec54ff3d21da1c6dbddca8f0018c8f1c1253287129fa3926d7",
-      "full_name": "memcached:alpine3.16",
+      "id": "sha256:7665ebc98caad2efd1afbce9e51f0fde93ee5395ad9f58fbad5da2ef684f8a2c",
+      "full_name": "memcached:1.6.15",
       "repo_name": "memcached",
-      "version_tag": "alpine3.16",
+      "version_tag": "1.6.15",
       "raw_tags": [
-        "memcached:alpine3.16"
+        "memcached:1.6.15"
       ],
-      "create_time": "2022-05-24T19:27:19Z",
-      "new_size": 7973282,
-      "new_size_human": "8.0 MB",
+      "create_time": "2022-05-28T05:32:01Z",
+      "new_size": 89159342,
+      "new_size_human": "89 MB",
       "instructions": [
         {
           "type": "ADD",
-          "time": "2022-05-23T19:19:30Z",
+          "time": "2022-05-28T01:20:23Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 5529096,
-          "size_human": "5.5 MB",
-          "params": "file:8e81116368669ed3dd361bc898d61bff249f524139a239fdaf3ec46869a39921 in /",
-          "command_snippet": "ADD file:8e81116368669ed3dd361bc898d61bff249...",
-          "command_all": "ADD file:8e81116368669ed3dd361bc898d61bff249f524139a239fdaf3ec46869a39921 /",
+          "size": 80411692,
+          "size_human": "80 MB",
+          "params": "file:134f25aec8adf83cb940ba073a3409ca85dbb5ae592b704f95193e7d2539a3bc in /",
+          "command_snippet": "ADD file:134f25aec8adf83cb940ba073a3409ca85d...",
+          "command_all": "ADD file:134f25aec8adf83cb940ba073a3409ca85dbb5ae592b704f95193e7d2539a3bc /",
           "target": "/",
           "source_type": "file"
         },
         {
           "type": "CMD",
-          "time": "2022-05-23T19:19:31Z",
+          "time": "2022-05-28T01:20:23Z",
           "is_nop": true,
           "is_exec_form": true,
           "local_image_exists": false,
           "layer_index": 0,
           "size": 0,
-          "params": "[\"/bin/sh\"]\n",
-          "command_snippet": "CMD [\"/bin/sh\"]\n",
-          "command_all": "CMD [\"/bin/sh\"]\n"
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
         },
         {
           "type": "RUN",
-          "time": "2022-05-24T19:24:21Z",
+          "time": "2022-05-28T05:29:05Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 4717,
-          "size_human": "4.7 kB",
-          "command_snippet": "RUN addgroup -g 11211 memcache && \\\n\tadduser...",
-          "command_all": "RUN addgroup -g 11211 memcache && \\\n\tadduser -D -u 11211 -G memcache memcache",
+          "size": 3637275,
+          "size_human": "3.6 MB",
+          "command_snippet": "RUN groupadd --system --gid 11211 memcache &...",
+          "command_all": "RUN groupadd --system --gid 11211 memcache && \\\n\tuseradd --system --gid memcache --uid 11211 memcache",
           "system_commands": [
-            "addgroup -g 11211 memcache",
-            "adduser -D -u 11211 -G memcache memcache"
+            "groupadd --system --gid 11211 memcache",
+            "useradd --system --gid memcache --uid 11211 memcache"
           ]
         },
         {
           "type": "RUN",
-          "time": "2022-05-24T19:24:23Z",
+          "time": "2022-05-28T05:29:08Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 272835,
-          "size_human": "273 kB",
-          "command_snippet": "RUN apk add --no-cache libsasl",
-          "command_all": "RUN apk add --no-cache libsasl",
+          "size": 1150129,
+          "size_human": "1.2 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tlibsasl2-modules \t; \trm -rf /var/lib/apt/lists/*",
           "system_commands": [
-            "apk add --no-cache libsasl"
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends libsasl2-modules",
+            "rm -rf /var/lib/apt/lists/*"
           ]
         },
         {
           "type": "ENV",
-          "time": "2022-05-24T19:24:23Z",
+          "time": "2022-05-28T05:29:08Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
@@ -145,7 +148,7 @@
         },
         {
           "type": "ENV",
-          "time": "2022-05-24T19:24:23Z",
+          "time": "2022-05-28T05:29:08Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
@@ -156,39 +159,47 @@
         },
         {
           "type": "RUN",
-          "time": "2022-05-24T19:27:18Z",
+          "time": "2022-05-28T05:32:00Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 2166476,
-          "size_human": "2.2 MB",
-          "command_snippet": "RUN set -x && \\\n\tapk add --no-cache --virtua...",
-          "command_all": "RUN set -x && \\\n\tapk add --no-cache --virtual .build-deps \t\tca-certificates \t\tcoreutils \t\tcyrus-sasl-dev \t\tgcc \t\tlibc-dev \t\tlibevent-dev \t\tlinux-headers \t\tmake \t\topenssl \t\topenssl-dev \t\tperl \t\tperl-io-socket-ssl \t\tperl-utils && \\\n\twget -O memcached.tar.gz \"https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz\" && \\\n\techo \"$MEMCACHED_SHA1  memcached.tar.gz\" | sha1sum -c - && \\\n\tmkdir -p /usr/src/memcached && \\\n\ttar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 && \\\n\trm memcached.tar.gz && \\\n\tcd /usr/src/memcached && \\\n\t./configure \t\t--build=\"$gnuArch\" \t\t--enable-extstore \t\t--enable-sasl \t\t--enable-sasl-pwdb \t\t--enable-tls && \\\n\tnproc=\"$(nproc)\" && \\\n\tmake -j \"$nproc\" && \\\n\tmake test PARALLEL=\"$nproc\" && \\\n\tmake install && \\\n\tcd / && \\\n\trm -rf /usr/src/memcached && \\\n\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\" && \\\n\tapk add --no-network --virtual .memcached-rundeps $runDeps && \\\n\tapk del --no-network .build-deps && \\\n\tmemcached -V",
+          "size": 3960088,
+          "size_human": "4.0 MB",
+          "command_snippet": "RUN set -x && \\\n\tsavedAptMark=\"$(apt-mark sh...",
+          "command_all": "RUN set -x && \\\n\tsavedAptMark=\"$(apt-mark showmanual)\" && \\\n\tapt-get update && \\\n\tapt-get install -y --no-install-recommends \t\tca-certificates \t\tdpkg-dev \t\tgcc \t\tlibc6-dev \t\tlibevent-dev \t\tlibio-socket-ssl-perl \t\tlibsasl2-dev \t\tlibssl-dev \t\tmake \t\tperl \t\twget && \\\n\trm -rf /var/lib/apt/lists/* && \\\n\twget -O memcached.tar.gz \"https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz\" && \\\n\techo \"$MEMCACHED_SHA1  memcached.tar.gz\" | sha1sum -c - && \\\n\tmkdir -p /usr/src/memcached && \\\n\ttar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 && \\\n\trm memcached.tar.gz && \\\n\tcd /usr/src/memcached && \\\n\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\" && \\\n\tenableExtstore=\"$( \t\tcase \"$gnuArch\" in \t\t\ts390x-*) ;; \t\t\t*) echo '--enable-extstore' ;; \t\tesac \t)\" && \\\n\t./configure \t\t--build=\"$gnuArch\" \t\t--enable-sasl \t\t--enable-sasl-pwdb \t\t--enable-tls \t\t$enableExtstore && \\\n\tnproc=\"$(nproc)\" && \\\n\tmake -j \"$nproc\" && \\\n\tsed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf && \\\n\tmake test PARALLEL=\"$nproc\" && \\\n\tmv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf && \\\n\tmake install && \\\n\tcd / && \\\n\trm -rf /usr/src/memcached && \\\n\tapt-mark auto '.*' > /dev/null && \\\n\tapt-mark manual $savedAptMark > /dev/null && \\\n\tfind /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual && \\\n\tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false && \\\n\tmemcached -V",
           "system_commands": [
             "set -x",
-            "apk add --no-cache --virtual .build-deps ca-certificates coreutils cyrus-sasl-dev gcc libc-dev libevent-dev linux-headers make openssl openssl-dev perl perl-io-socket-ssl perl-utils",
+            "savedAptMark=\"$(apt-mark showmanual)\"",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates dpkg-dev gcc libc6-dev libevent-dev libio-socket-ssl-perl libsasl2-dev libssl-dev make perl wget",
+            "rm -rf /var/lib/apt/lists/*",
             "wget -O memcached.tar.gz \"https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz\"",
             "echo \"$MEMCACHED_SHA1  memcached.tar.gz\" | sha1sum -c -",
             "mkdir -p /usr/src/memcached",
             "tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1",
             "rm memcached.tar.gz",
             "cd /usr/src/memcached",
-            "./configure --build=\"$gnuArch\" --enable-extstore --enable-sasl --enable-sasl-pwdb --enable-tls",
+            "gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"",
+            "enableExtstore=\"$( case \"$gnuArch\" in s390x-*) ;; *) echo '--enable-extstore' ;; esac )\"",
+            "./configure --build=\"$gnuArch\" --enable-sasl --enable-sasl-pwdb --enable-tls $enableExtstore",
             "nproc=\"$(nproc)\"",
             "make -j \"$nproc\"",
+            "sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf",
             "make test PARALLEL=\"$nproc\"",
+            "mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf",
             "make install",
             "cd /",
             "rm -rf /usr/src/memcached",
-            "runDeps=\"$( scanelf --needed --nobanner --format '%n#p' --recursive /usr/local | tr ',' 'n' | sort -u | awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' )\"",
-            "apk add --no-network --virtual .memcached-rundeps $runDeps",
-            "apk del --no-network .build-deps",
+            "apt-mark auto '.*' > /dev/null",
+            "apt-mark manual $savedAptMark > /dev/null",
+            "find /usr/local -type f -executable -exec ldd '{}' ';' | awk '/=>/ { print $(NF-1) }' | sort -u | xargs -r dpkg-query --search | cut -d: -f1 | sort -u | xargs -r apt-mark manual",
+            "apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
             "memcached -V"
           ]
         },
         {
           "type": "COPY",
-          "time": "2022-05-24T19:27:18Z",
+          "time": "2022-05-28T05:32:00Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
@@ -202,7 +213,7 @@
         },
         {
           "type": "RUN",
-          "time": "2022-05-24T19:27:19Z",
+          "time": "2022-05-28T05:32:00Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -216,7 +227,7 @@
         },
         {
           "type": "ENTRYPOINT",
-          "time": "2022-05-24T19:27:19Z",
+          "time": "2022-05-28T05:32:00Z",
           "is_nop": true,
           "is_exec_form": true,
           "local_image_exists": false,
@@ -228,7 +239,7 @@
         },
         {
           "type": "USER",
-          "time": "2022-05-24T19:27:19Z",
+          "time": "2022-05-28T05:32:00Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
@@ -239,7 +250,7 @@
         },
         {
           "type": "EXPOSE",
-          "time": "2022-05-24T19:27:19Z",
+          "time": "2022-05-28T05:32:01Z",
           "is_nop": true,
           "local_image_exists": false,
           "layer_index": 0,
@@ -250,7 +261,7 @@
         },
         {
           "type": "CMD",
-          "time": "2022-05-24T19:27:19Z",
+          "time": "2022-05-28T05:32:01Z",
           "is_last_instruction": true,
           "is_nop": true,
           "is_exec_form": true,
@@ -261,7 +272,7 @@
           "command_snippet": "CMD [\"memcached\"]\n",
           "command_all": "CMD [\"memcached\"]\n",
           "raw_tags": [
-            "memcached:alpine3.16"
+            "memcached:1.6.15"
           ]
         }
       ]

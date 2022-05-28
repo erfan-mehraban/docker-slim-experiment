@@ -9,7 +9,7 @@
   },
   "type": "build",
   "state": "done",
-  "target_reference": "redis:latest",
+  "target_reference": "redis:7.0.0",
   "system": {
     "type": "Linux",
     "release": "4.15.0-176-generic",
@@ -23,9 +23,11 @@
     "identity": {
       "id": "sha256:a09124a3f90d65e6889a96041aa94a7a74ef30b965e1634887e05bd972ea02b9",
       "tags": [
+        "7.0.0",
         "latest"
       ],
       "names": [
+        "redis:7.0.0",
         "redis:latest"
       ],
       "digests": [
@@ -71,10 +73,11 @@
     {
       "is_top_image": true,
       "id": "sha256:a09124a3f90d65e6889a96041aa94a7a74ef30b965e1634887e05bd972ea02b9",
-      "full_name": "redis:latest",
+      "full_name": "redis:7.0.0",
       "repo_name": "redis",
-      "version_tag": "latest",
+      "version_tag": "7.0.0",
       "raw_tags": [
+        "redis:7.0.0",
         "redis:latest"
       ],
       "create_time": "2022-05-25T22:04:35Z",
@@ -304,6 +307,7 @@
           "command_snippet": "CMD [\"redis-server\"]\n",
           "command_all": "CMD [\"redis-server\"]\n",
           "raw_tags": [
+            "redis:7.0.0",
             "redis:latest"
           ]
         }

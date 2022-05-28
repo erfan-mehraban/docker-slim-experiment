@@ -24,4 +24,4 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 6379
 CMD ["redis-server"]
 
-# end of image: redis:latest (id:  tags: redis:latest)
+# end of image: redis:7.0.0 (id:  tags: redis:7.0.0,redis:latest)

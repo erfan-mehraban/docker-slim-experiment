@@ -3,11 +3,11 @@ docker-slim build \
     --show-clogs=true \
     --http-probe=false \
     --publish-port 11211 \
-    memcached:alpine3.16 &
+    memcached:1.6.15 &
 
 pid=$!
 
-sleep 5
+sleep 10
 
 docker run \
     --network=host \
@@ -17,6 +17,6 @@ docker run \
 
 kill -SIGUSR1 $pid
 
-sleep 20
+sleep 30
 
 cat slim.report.json | jq .artifact_location | xargs -I{} cp -r {} .
