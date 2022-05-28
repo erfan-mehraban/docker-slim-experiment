@@ -1,0 +1,2158 @@
+{
+  "system": {
+    "type": "Linux",
+    "release": "4.15.0-176-generic",
+    "distro": {
+      "name": "Debian GNU/Linux",
+      "version": "11",
+      "display_name": "Debian GNU/Linux 11 (bullseye)"
+    }
+  },
+  "monitors": {
+    "fan": {
+      "monitor_pid": 1,
+      "monitor_ppid": 0,
+      "event_count": 202,
+      "main_process": {
+        "pid": 20,
+        "name": "docker-entrypoi",
+        "path": "/bin/dash",
+        "cmd": "",
+        "cwd": "/",
+        "root": "/",
+        "ppid": 1
+      },
+      "processes": {
+        "20": {
+          "pid": 20,
+          "name": "docker-entrypoi",
+          "path": "/bin/dash",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 1
+        },
+        "21": {
+          "pid": 21,
+          "name": "docker-entrypoi",
+          "path": "/bin/dash",
+          "cmd": "/bin/sh /docker-entrypoint.sh nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "23": {
+          "pid": 23,
+          "name": "find",
+          "path": "/usr/bin/find",
+          "cmd": "find /docker-entrypoint.d/ -follow -type f -print",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "24": {
+          "pid": 24,
+          "name": "sort",
+          "path": "/usr/bin/sort",
+          "cmd": "sort -V",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "26": {
+          "pid": 26,
+          "name": "10-listen-on-ip",
+          "path": "/bin/dash",
+          "cmd": "/bin/sh /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 25
+        },
+        "27": {
+          "pid": 27,
+          "name": "10-listen-on-ip",
+          "path": "/bin/dash",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 26
+        },
+        "28": {
+          "pid": 28,
+          "name": "20-envsubst-on-",
+          "path": "/bin/dash",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 25
+        },
+        "29": {
+          "pid": 29,
+          "name": "20-envsubst-on-",
+          "path": "/bin/dash",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 28
+        },
+        "32": {
+          "pid": 32,
+          "name": "20-envsubst-on-",
+          "path": "/bin/dash",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 31
+        },
+        "33": {
+          "pid": 33,
+          "name": "cut",
+          "path": "/usr/bin/cut",
+          "cmd": "cut -d= -f1",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 31
+        },
+        "34": {
+          "pid": 34,
+          "name": "30-tune-worker-",
+          "path": "/bin/dash",
+          "cmd": "/bin/sh /docker-entrypoint.d/30-tune-worker-processes.sh",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 25
+        },
+        "35": {
+          "pid": 35,
+          "name": "basename",
+          "path": "/usr/bin/basename",
+          "cmd": "",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 34
+        },
+        "36": {
+          "pid": 36,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "37": {
+          "pid": 37,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "38": {
+          "pid": 38,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "39": {
+          "pid": 39,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "40": {
+          "pid": 40,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "41": {
+          "pid": 41,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "42": {
+          "pid": 42,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "43": {
+          "pid": 43,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "44": {
+          "pid": 44,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "45": {
+          "pid": 45,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "46": {
+          "pid": 46,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
+        "47": {
+          "pid": 47,
+          "name": "nginx",
+          "path": "/usr/sbin/nginx",
+          "cmd": "nginx: master process nginx -g daemon off;",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        }
+      },
+      "process_files": {
+        "20": {
+          "/bin/dash": {
+            "event_count": 3,
+            "first_eid": 3,
+            "reads": 2,
+            "execs": 3
+          },
+          "/docker-entrypoint.sh": {
+            "event_count": 4,
+            "first_eid": 1,
+            "reads": 2
+          },
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 166,
+            "reads": 1
+          },
+          "/etc/ld.so.cache": {
+            "event_count": 3,
+            "first_eid": 7
+          },
+          "/etc/nginx/conf.d/default.conf": {
+            "event_count": 2,
+            "first_eid": 171,
+            "reads": 1
+          },
+          "/etc/nginx/mime.types": {
+            "event_count": 3,
+            "first_eid": 168,
+            "reads": 2
+          },
+          "/etc/nginx/nginx.conf": {
+            "event_count": 2,
+            "first_eid": 157,
+            "reads": 1
+          },
+          "/etc/nsswitch.conf": {
+            "event_count": 2,
+            "first_eid": 159,
+            "reads": 1
+          },
+          "/etc/passwd": {
+            "event_count": 2,
+            "first_eid": 164,
+            "reads": 1
+          },
+          "/etc/ssl/openssl.cnf": {
+            "event_count": 4,
+            "first_eid": 153,
+            "reads": 3
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 3,
+            "first_eid": 6,
+            "reads": 3
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 4,
+            "first_eid": 8,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libcrypt.so.1.1.0": {
+            "event_count": 2,
+            "first_eid": 138,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libdl-2.31.so": {
+            "event_count": 2,
+            "first_eid": 134,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libnss_files-2.31.so": {
+            "event_count": 2,
+            "first_eid": 162,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.31.so": {
+            "event_count": 2,
+            "first_eid": 136,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libz.so.1.2.11": {
+            "event_count": 2,
+            "first_eid": 146,
+            "reads": 1
+          },
+          "/run/nginx.pid": {
+            "event_count": 2,
+            "first_eid": 173,
+            "writes": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
+            "event_count": 2,
+            "first_eid": 144,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.1": {
+            "event_count": 2,
+            "first_eid": 140,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
+            "event_count": 2,
+            "first_eid": 142,
+            "reads": 1
+          },
+          "/usr/sbin/nginx": {
+            "event_count": 3,
+            "first_eid": 128,
+            "reads": 2
+          },
+          "/usr/share/zoneinfo/Etc/UTC": {
+            "event_count": 3,
+            "first_eid": 150,
+            "reads": 2
+          }
+        },
+        "21": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 17
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 2,
+            "first_eid": 15,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 22,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libdl-2.31.so": {
+            "event_count": 2,
+            "first_eid": 26,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libm-2.31.so": {
+            "event_count": 2,
+            "first_eid": 20,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.31.so": {
+            "event_count": 2,
+            "first_eid": 28,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libselinux.so.1": {
+            "event_count": 2,
+            "first_eid": 18,
+            "reads": 1
+          },
+          "/usr/bin/find": {
+            "event_count": 3,
+            "first_eid": 12,
+            "reads": 2
+          },
+          "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.1": {
+            "event_count": 2,
+            "first_eid": 24,
+            "reads": 1
+          }
+        },
+        "23": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 35
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 2,
+            "first_eid": 33,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 49,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libdl-2.31.so": {
+            "event_count": 2,
+            "first_eid": 55,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libm-2.31.so": {
+            "event_count": 2,
+            "first_eid": 45,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.31.so": {
+            "event_count": 2,
+            "first_eid": 57,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libselinux.so.1": {
+            "event_count": 2,
+            "first_eid": 42,
+            "reads": 1
+          },
+          "/usr/bin/find": {
+            "event_count": 3,
+            "first_eid": 30,
+            "reads": 2,
+            "execs": 3
+          },
+          "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.1": {
+            "event_count": 2,
+            "first_eid": 53,
+            "reads": 1
+          }
+        },
+        "24": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 44
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 3,
+            "first_eid": 39,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 51,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libpthread-2.31.so": {
+            "event_count": 2,
+            "first_eid": 46,
+            "reads": 1
+          },
+          "/usr/bin/sort": {
+            "event_count": 3,
+            "first_eid": 36,
+            "reads": 2,
+            "execs": 3
+          }
+        },
+        "26": {
+          "/bin/dash": {
+            "event_count": 1,
+            "first_eid": 61,
+            "reads": 1,
+            "execs": 1
+          },
+          "/docker-entrypoint.d/10-listen-on-ipv6-by-default.sh": {
+            "event_count": 4,
+            "first_eid": 59,
+            "reads": 2
+          },
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 63
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 62,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 64,
+            "reads": 1
+          }
+        },
+        "27": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 74
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 3,
+            "first_eid": 71,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 75,
+            "reads": 1
+          },
+          "/usr/bin/basename": {
+            "event_count": 3,
+            "first_eid": 68,
+            "reads": 2
+          }
+        },
+        "28": {
+          "/bin/dash": {
+            "event_count": 2,
+            "first_eid": 79,
+            "reads": 2,
+            "execs": 2
+          },
+          "/docker-entrypoint.d/20-envsubst-on-templates.sh": {
+            "event_count": 4,
+            "first_eid": 77,
+            "reads": 2
+          },
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 82
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 81,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 83,
+            "reads": 1
+          }
+        },
+        "29": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 91
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 90,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 92,
+            "reads": 1
+          },
+          "/usr/bin/basename": {
+            "event_count": 3,
+            "first_eid": 87,
+            "reads": 2
+          }
+        },
+        "32": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 98
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 97,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 104,
+            "reads": 1
+          },
+          "/usr/bin/env": {
+            "event_count": 3,
+            "first_eid": 94,
+            "reads": 2
+          }
+        },
+        "33": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 106
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 2,
+            "first_eid": 102,
+            "reads": 2
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 107,
+            "reads": 1
+          },
+          "/usr/bin/cut": {
+            "event_count": 3,
+            "first_eid": 99,
+            "reads": 2,
+            "execs": 3
+          }
+        },
+        "34": {
+          "/bin/dash": {
+            "event_count": 4,
+            "first_eid": 111,
+            "reads": 3,
+            "execs": 4
+          },
+          "/docker-entrypoint.d/30-tune-worker-processes.sh": {
+            "event_count": 4,
+            "first_eid": 109,
+            "reads": 2
+          },
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 116
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 115,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 117,
+            "reads": 1
+          }
+        },
+        "35": {
+          "/etc/ld.so.cache": {
+            "event_count": 1,
+            "first_eid": 125
+          },
+          "/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 1,
+            "first_eid": 124,
+            "reads": 1
+          },
+          "/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 2,
+            "first_eid": 126,
+            "reads": 1
+          },
+          "/usr/bin/basename": {
+            "event_count": 3,
+            "first_eid": 121,
+            "reads": 2,
+            "execs": 3
+          }
+        },
+        "36": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 175,
+            "reads": 1
+          }
+        },
+        "37": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 177,
+            "reads": 1
+          }
+        },
+        "38": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 179,
+            "reads": 1
+          }
+        },
+        "39": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 181,
+            "reads": 1
+          }
+        },
+        "40": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 183,
+            "reads": 1
+          }
+        },
+        "41": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 185,
+            "reads": 1
+          }
+        },
+        "42": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 187,
+            "reads": 1
+          }
+        },
+        "43": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 189,
+            "reads": 1
+          }
+        },
+        "44": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 191,
+            "reads": 1
+          }
+        },
+        "45": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 193,
+            "reads": 1
+          }
+        },
+        "46": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 195,
+            "reads": 1
+          },
+          "/usr/share/nginx/html/index.html": {
+            "event_count": 2,
+            "first_eid": 201,
+            "reads": 1
+          }
+        },
+        "47": {
+          "/etc/group": {
+            "event_count": 2,
+            "first_eid": 197,
+            "reads": 1
+          },
+          "/usr/share/nginx/html/index.html": {
+            "event_count": 2,
+            "first_eid": 199,
+            "reads": 1
+          }
+        }
+      }
+    },
+    "pt": {
+      "enabled": true,
+      "arch_name": "amd64",
+      "syscall_count": 2635,
+      "syscall_num": 71,
+      "syscall_stats": {
+        "0": {
+          "num": 0,
+          "name": "read",
+          "count": 302
+        },
+        "1": {
+          "num": 1,
+          "name": "write",
+          "count": 37
+        },
+        "10": {
+          "num": 10,
+          "name": "mprotect",
+          "count": 73
+        },
+        "102": {
+          "num": 102,
+          "name": "getuid",
+          "count": 4
+        },
+        "104": {
+          "num": 104,
+          "name": "getgid",
+          "count": 4
+        },
+        "105": {
+          "num": 105,
+          "name": "setuid",
+          "count": 12
+        },
+        "106": {
+          "num": 106,
+          "name": "setgid",
+          "count": 12
+        },
+        "107": {
+          "num": 107,
+          "name": "geteuid",
+          "count": 21
+        },
+        "108": {
+          "num": 108,
+          "name": "getegid",
+          "count": 4
+        },
+        "11": {
+          "num": 11,
+          "name": "munmap",
+          "count": 15
+        },
+        "110": {
+          "num": 110,
+          "name": "getppid",
+          "count": 5
+        },
+        "116": {
+          "num": 116,
+          "name": "setgroups",
+          "count": 12
+        },
+        "12": {
+          "num": 12,
+          "name": "brk",
+          "count": 53
+        },
+        "13": {
+          "num": 13,
+          "name": "rt_sigaction",
+          "count": 71
+        },
+        "130": {
+          "num": 130,
+          "name": "rt_sigsuspend",
+          "count": 1
+        },
+        "137": {
+          "num": 137,
+          "name": "statfs",
+          "count": 4
+        },
+        "14": {
+          "num": 14,
+          "name": "rt_sigprocmask",
+          "count": 26
+        },
+        "15": {
+          "num": 15,
+          "name": "rt_sigreturn",
+          "count": 31
+        },
+        "157": {
+          "num": 157,
+          "name": "prctl",
+          "count": 12
+        },
+        "158": {
+          "num": 158,
+          "name": "arch_prctl",
+          "count": 13
+        },
+        "16": {
+          "num": 16,
+          "name": "ioctl",
+          "count": 53
+        },
+        "17": {
+          "num": 17,
+          "name": "pread64",
+          "count": 4
+        },
+        "18": {
+          "num": 18,
+          "name": "pwrite64",
+          "count": 1
+        },
+        "186": {
+          "num": 186,
+          "name": "gettid",
+          "count": 19
+        },
+        "20": {
+          "num": 20,
+          "name": "writev",
+          "count": 2
+        },
+        "202": {
+          "num": 202,
+          "name": "futex",
+          "count": 16
+        },
+        "204": {
+          "num": 204,
+          "name": "sched_getaffinity",
+          "count": 1
+        },
+        "206": {
+          "num": 206,
+          "name": "io_setup",
+          "count": 12
+        },
+        "21": {
+          "num": 21,
+          "name": "access",
+          "count": 15
+        },
+        "213": {
+          "num": 213,
+          "name": "epoll_create",
+          "count": 13
+        },
+        "217": {
+          "num": 217,
+          "name": "getdents64",
+          "count": 6
+        },
+        "218": {
+          "num": 218,
+          "name": "set_tid_address",
+          "count": 4
+        },
+        "22": {
+          "num": 22,
+          "name": "pipe",
+          "count": 9
+        },
+        "221": {
+          "num": 221,
+          "name": "fadvise64",
+          "count": 2
+        },
+        "232": {
+          "num": 232,
+          "name": "epoll_wait",
+          "count": 27
+        },
+        "233": {
+          "num": 233,
+          "name": "epoll_ctl",
+          "count": 66
+        },
+        "257": {
+          "num": 257,
+          "name": "openat",
+          "count": 97
+        },
+        "262": {
+          "num": 262,
+          "name": "newfstatat",
+          "count": 2
+        },
+        "269": {
+          "num": 269,
+          "name": "faccessat",
+          "count": 3
+        },
+        "273": {
+          "num": 273,
+          "name": "set_robust_list",
+          "count": 16
+        },
+        "288": {
+          "num": 288,
+          "name": "accept4",
+          "count": 2
+        },
+        "290": {
+          "num": 290,
+          "name": "eventfd2",
+          "count": 24
+        },
+        "3": {
+          "num": 3,
+          "name": "close",
+          "count": 287
+        },
+        "302": {
+          "num": 302,
+          "name": "prlimit64",
+          "count": 9
+        },
+        "33": {
+          "num": 33,
+          "name": "dup2",
+          "count": 30
+        },
+        "39": {
+          "num": 39,
+          "name": "getpid",
+          "count": 17
+        },
+        "4": {
+          "num": 4,
+          "name": "stat",
+          "count": 46
+        },
+        "40": {
+          "num": 40,
+          "name": "sendfile",
+          "count": 2
+        },
+        "41": {
+          "num": 41,
+          "name": "socket",
+          "count": 5
+        },
+        "42": {
+          "num": 42,
+          "name": "connect",
+          "count": 4
+        },
+        "45": {
+          "num": 45,
+          "name": "recvfrom",
+          "count": 2
+        },
+        "46": {
+          "num": 46,
+          "name": "sendmsg",
+          "count": 66
+        },
+        "47": {
+          "num": 47,
+          "name": "recvmsg",
+          "count": 77
+        },
+        "49": {
+          "num": 49,
+          "name": "bind",
+          "count": 1
+        },
+        "5": {
+          "num": 5,
+          "name": "fstat",
+          "count": 85
+        },
+        "50": {
+          "num": 50,
+          "name": "listen",
+          "count": 2
+        },
+        "53": {
+          "num": 53,
+          "name": "socketpair",
+          "count": 24
+        },
+        "54": {
+          "num": 54,
+          "name": "setsockopt",
+          "count": 3
+        },
+        "56": {
+          "num": 56,
+          "name": "clone",
+          "count": 24
+        },
+        "58": {
+          "num": 58,
+          "name": "vfork",
+          "count": 3
+        },
+        "59": {
+          "num": 59,
+          "name": "execve",
+          "count": 28
+        },
+        "61": {
+          "num": 61,
+          "name": "wait4",
+          "count": 30
+        },
+        "63": {
+          "num": 63,
+          "name": "uname",
+          "count": 4
+        },
+        "72": {
+          "num": 72,
+          "name": "fcntl",
+          "count": 69
+        },
+        "79": {
+          "num": 79,
+          "name": "getcwd",
+          "count": 1
+        },
+        "8": {
+          "num": 8,
+          "name": "lseek",
+          "count": 497
+        },
+        "81": {
+          "num": 81,
+          "name": "fchdir",
+          "count": 2
+        },
+        "83": {
+          "num": 83,
+          "name": "mkdir",
+          "count": 5
+        },
+        "9": {
+          "num": 9,
+          "name": "mmap",
+          "count": 198
+        },
+        "92": {
+          "num": 92,
+          "name": "chown",
+          "count": 5
+        },
+        "99": {
+          "num": 99,
+          "name": "sysinfo",
+          "count": 3
+        }
+      },
+      "fs_activity": {
+        "/docker-entrypoint.d/10-listen-on-ipv6-by-default.sh": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {},
+            "269": {}
+          },
+          "pids": {
+            "25": {},
+            "26": {}
+          },
+          "is_subdir": false
+        },
+        "/docker-entrypoint.d/20-envsubst-on-templates.sh": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {},
+            "269": {}
+          },
+          "pids": {
+            "25": {},
+            "28": {}
+          },
+          "is_subdir": false
+        },
+        "/docker-entrypoint.d/30-tune-worker-processes.sh": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {},
+            "269": {}
+          },
+          "pids": {
+            "25": {},
+            "34": {}
+          },
+          "is_subdir": false
+        },
+        "/docker-entrypoint.sh": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/group": {
+          "ops_all": 13,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "36": {},
+            "37": {},
+            "38": {},
+            "39": {},
+            "40": {},
+            "41": {},
+            "42": {},
+            "43": {},
+            "44": {},
+            "45": {},
+            "46": {},
+            "47": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/ld.so.cache": {
+          "ops_all": 14,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "21": {},
+            "23": {},
+            "24": {},
+            "26": {},
+            "27": {},
+            "28": {},
+            "29": {},
+            "32": {},
+            "33": {},
+            "34": {},
+            "35": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/localtime": {
+          "ops_all": 2,
+          "ops_checkfile": 2,
+          "syscalls": {
+            "257": {},
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/nginx/conf.d/default.conf": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/nginx/mime.types": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/nginx/nginx.conf": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/nsswitch.conf": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/etc/passwd": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libc.so.6": {
+          "ops_all": 13,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "21": {},
+            "23": {},
+            "24": {},
+            "26": {},
+            "27": {},
+            "28": {},
+            "29": {},
+            "32": {},
+            "33": {},
+            "34": {},
+            "35": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libcrypt.so.1": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libdl.so.2": {
+          "ops_all": 3,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "21": {},
+            "23": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libm.so.6": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "21": {},
+            "23": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libnss_files.so.2": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libpthread.so.0": {
+          "ops_all": 4,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "21": {},
+            "23": {},
+            "24": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libselinux.so.1": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "21": {},
+            "23": {}
+          },
+          "is_subdir": false
+        },
+        "/lib/x86_64-linux-gnu/libz.so.1": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/bin/basename": {
+          "ops_all": 3,
+          "ops_checkfile": 3,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "27": {},
+            "29": {},
+            "35": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/bin/cut": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "31": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/bin/env": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "31": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/bin/find": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/bin/sort": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/lib/ssl/openssl.cnf": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0": {
+          "ops_all": 3,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {},
+            "21": {},
+            "23": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/usr/share/nginx/html/index.html": {
+          "ops_all": 4,
+          "ops_checkfile": 2,
+          "syscalls": {
+            "257": {},
+            "4": {}
+          },
+          "pids": {
+            "46": {},
+            "47": {}
+          },
+          "is_subdir": false
+        },
+        "/var/cache/nginx/client_temp": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/cache/nginx/fastcgi_temp": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/cache/nginx/proxy_temp": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/cache/nginx/scgi_temp": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/cache/nginx/uwsgi_temp": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "4": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/log/nginx/access.log": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/log/nginx/error.log": {
+          "ops_all": 2,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        },
+        "/var/run/nginx.pid": {
+          "ops_all": 1,
+          "ops_checkfile": 1,
+          "syscalls": {
+            "257": {}
+          },
+          "pids": {
+            "20": {}
+          },
+          "is_subdir": false
+        }
+      }
+    }
+  },
+  "image": {
+    "files": [
+      {
+        "file_type": "File",
+        "file_path": "/bin/dash",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 125560,
+        "sha1_hash": "827265afe07691a445674eb09e0eb4fd025dbd43"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/bin/sh",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "dash",
+        "file_size": 4
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/dev/stderr",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/proc/self/fd/2",
+        "file_size": 15
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/dev/stdout",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/proc/self/fd/1",
+        "file_size": 15
+      },
+      {
+        "file_type": "File",
+        "file_path": "/docker-entrypoint.d/10-listen-on-ipv6-by-default.sh",
+        "mode": "-rwxrwxr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1961,
+        "sha1_hash": "e0cb49b621252b63609e495e62064da9c7a3c004"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/docker-entrypoint.d/20-envsubst-on-templates.sh",
+        "mode": "-rwxrwxr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1037,
+        "sha1_hash": "8a39b950862950b786f5ff4e2349656b9684d90f"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/docker-entrypoint.d/30-tune-worker-processes.sh",
+        "mode": "-rwxrwxr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 4613,
+        "sha1_hash": "c7cf45c009615c34ef4ee076bcbad02e601231ca"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/docker-entrypoint.sh",
+        "mode": "-rwxrwxr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1202,
+        "sha1_hash": "0fdc07784f6ce001265401704bb838bf9edee95d"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/group",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 459,
+        "sha1_hash": "715ba5c345df05fa28f0bed54f5960159536c99a"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/ld.so.cache",
+        "mode": "-rw-r--r--",
+        "file_size": 9440,
+        "sha1_hash": "4ee28635955020c8e6c3eccf3ef772b079827ef3"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/etc/localtime",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/usr/share/zoneinfo/Etc/UTC",
+        "file_size": 27
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/nginx/conf.d/default.conf",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1072,
+        "sha1_hash": "565a608fce07fe49680fa75fe50ea080538a969f"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/nginx/mime.types",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 5349,
+        "sha1_hash": "9b85e5091018455091d7f135c4a160ad9487516a"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/nginx/nginx.conf",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 648,
+        "sha1_hash": "7238d5452bab8515e1b347899ec60873f3aaec1f"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/nsswitch.conf",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 494,
+        "sha1_hash": "6dffef69c10367a91b048d9180a4424eede80b74"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/passwd",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 976,
+        "sha1_hash": "c4012f9c0f61a54104b3fcb5de1f83a6035fa46b"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/etc/ssl/openssl.cnf",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 11118,
+        "sha1_hash": "7df5fcb0344df7c7c66a0a9fa1e1555ff0a727b9"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/ld-2.31.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 177928,
+        "sha1_hash": "d09c02d63a2ddf598492f54716283f61c5e3749a"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "ld-2.31.so",
+        "file_size": 10
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libc-2.31.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1839792,
+        "sha1_hash": "0c2331c479336fb9b77ae1b7388b96077d08e8be"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libc.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libc-2.31.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libcrypt.so.1",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libcrypt.so.1.1.0",
+        "file_size": 17
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libcrypt.so.1.1.0",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 202680,
+        "sha1_hash": "caaeaa9c061eb4441f6c0a6f17d633f082560fcf"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libdl-2.31.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 18688,
+        "sha1_hash": "dc760832063c1d74afe872091b23b2cfcb84abed"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libdl.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libdl-2.31.so",
+        "file_size": 13
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libm-2.31.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1321344,
+        "sha1_hash": "32808528ea3047b9056105e3927892df9e8ba9a3"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libm.so.6",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libm-2.31.so",
+        "file_size": 12
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libnss_files-2.31.so",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 51696,
+        "sha1_hash": "cc2f88bc2f3b9c3219e1e6e4d3b5b7453d2c85da"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libnss_files.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libnss_files-2.31.so",
+        "file_size": 20
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libpthread-2.31.so",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 149520,
+        "sha1_hash": "9cfd3566346f7ec5006b325a5ed0adc98aed17f7"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libpthread.so.0",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libpthread-2.31.so",
+        "file_size": 18
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libselinux.so.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 166120,
+        "sha1_hash": "71d5d4cb118b01c2830ea88afa4fe5f295c6c765"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib/x86_64-linux-gnu/libz.so.1",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libz.so.1.2.11",
+        "file_size": 14
+      },
+      {
+        "file_type": "File",
+        "file_path": "/lib/x86_64-linux-gnu/libz.so.1.2.11",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 113088,
+        "sha1_hash": "348ac52bed22ebe268d236edcf8d2fb3d4a0300a"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/lib64/ld-linux-x86-64.so.2",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/lib/x86_64-linux-gnu/ld-2.31.so",
+        "file_size": 32
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/proc/self/fd/1",
+        "mode": "L-wx------",
+        "link_ref": "pipe:[417460]",
+        "file_size": 64
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/proc/self/fd/2",
+        "mode": "L-wx------",
+        "link_ref": "pipe:[417461]",
+        "file_size": 64
+      },
+      null,
+      {
+        "file_type": "File",
+        "file_path": "/run/nginx.pid",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "W": true
+        },
+        "file_size": 3,
+        "sha1_hash": "d0758565fd06c37aa66b071160d156f5628cd518"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/bin/basename",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 39712,
+        "sha1_hash": "4b896a8d77710575d22e66d79519bda56e6edce7"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/bin/cut",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 48032,
+        "sha1_hash": "46cf3f25f2bc239c3e5865a73b3cc375c2f48ac3"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/bin/env",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 48480,
+        "sha1_hash": "80cb288e78a6e8310a14422d6ecdabe2295b7878"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/bin/find",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 311008,
+        "sha1_hash": "5d2afebd7578378eb3f32d4b059d542d0f048f58"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/bin/sort",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true,
+          "X": true
+        },
+        "file_size": 118408,
+        "sha1_hash": "fa0ce5e7d719f41dfef84984d8b07c50581d05ff"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/lib/ssl/openssl.cnf",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/etc/ssl/openssl.cnf",
+        "file_size": 20
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 3076992,
+        "sha1_hash": "e23f4e7192a29d078160b856925e9df38159f29a"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "libpcre2-8.so.0.10.1",
+        "file_size": 20
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 617128,
+        "sha1_hash": "f206c8c4840cd532b08aacfbf0b90b9449ec26ca"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/lib/x86_64-linux-gnu/libssl.so.1.1",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 597792,
+        "sha1_hash": "0c77612caa981271726ebdd7a121a7aacc89b5fb"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/sbin/nginx",
+        "mode": "-rwxr-xr-x",
+        "flags": {
+          "R": true
+        },
+        "file_size": 1378584,
+        "sha1_hash": "a26130ee94f1cd02dacc4c42191b8d607eac21e3"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/share/nginx/html/index.html",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 615,
+        "sha1_hash": "c51a3f0e6de4eb802d5630941c3fd9e1d0efae4b"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/Etc/UCT",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "UTC",
+        "file_size": 3
+      },
+      {
+        "file_type": "File",
+        "file_path": "/usr/share/zoneinfo/Etc/UTC",
+        "mode": "-rw-r--r--",
+        "flags": {
+          "R": true
+        },
+        "file_size": 118,
+        "sha1_hash": "1b4722a913e61f7b016401ad5c7cf1010c5a8c36"
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/Etc/Universal",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "UTC",
+        "file_size": 3
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/Etc/Zulu",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "UTC",
+        "file_size": 3
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/UCT",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "Etc/UTC",
+        "file_size": 7
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/UTC",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "Etc/UTC",
+        "file_size": 7
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/Universal",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "Etc/UTC",
+        "file_size": 7
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/Zulu",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "Etc/UTC",
+        "file_size": 7
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/usr/share/zoneinfo/localtime",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/etc/localtime",
+        "file_size": 14
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "file_type": "Symlink",
+        "file_path": "/var/log/nginx/access.log",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/dev/stdout",
+        "file_size": 11
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/var/log/nginx/error.log",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/dev/stderr",
+        "file_size": 11
+      },
+      {
+        "file_type": "Symlink",
+        "file_path": "/var/run",
+        "mode": "Lrwxrwxrwx",
+        "link_ref": "/run",
+        "file_size": 4
+      },
+      {
+        "file_type": "File",
+        "file_path": "/var/run/nginx.pid",
+        "mode": "-rw-r--r--",
+        "file_size": 3,
+        "sha1_hash": "d0758565fd06c37aa66b071160d156f5628cd518"
+      }
+    ]
+  }
+}
