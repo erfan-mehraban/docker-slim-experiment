@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  redis:
+    image: redis:7.0.0
+  tester:
+    image: redis:7.0.0
+    entrypoint:
+      - redis-benchmark
+      - -h
+      - redis
+      - -c
+      - '100'
+      - -d
+      - '5'
+      - -n
+      - '400000'

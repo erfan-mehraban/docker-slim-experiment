@@ -1,0 +1,64 @@
+\documentclass[docker-slim-report.tex]{subfiles}
+\begin{document}
+
+\begin{figure}[h]
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                smooth,
+                width=0.4*\textwidth,
+                title={CPU usage},
+                xlabel={Time [sec]},
+                ylabel={CPU usage [\%]},
+                legend pos=south east,
+                ymajorgrids=true,
+                grid style=dashed,
+            ]
+                \addplot[
+                    color=blue
+                    ]
+                coordinates {
+                    {cpu-original}
+                };
+                \addlegendentry{original}
+                \addplot[
+                    color=red
+                    ]
+                coordinates {
+                    {cpu-slim}
+                };
+                \addlegendentry{slim}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{tikzpicture}
+            \begin{axis}[
+                smooth,
+                width=0.4*\textwidth,
+                title={Memory+Swap usage},
+                xlabel={Time [sec]},
+                ylabel={Memory used [MB]},
+                legend pos=north east,
+                ymajorgrids=true,
+                grid style=dashed,
+            ]
+                \addplot[
+                    color=red
+                    ]
+                coordinates {
+                    {memory-original}
+                };
+                \addlegendentry{original}
+                \addplot[
+                    color=blue
+                    ]
+                coordinates {
+                    {memory-slim}
+                };
+                \addlegendentry{slim}
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \caption{System CPU and memory usage for {Q}}
+\end{figure}
+
+\end{document}
