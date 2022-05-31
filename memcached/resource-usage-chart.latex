@@ -1,0 +1,68 @@
+\documentclass[docker-slim-report.tex]{subfiles}
+\begin{document}
+
+\begin{figure}[h]
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[
+                smooth,
+                width=0.4*\textwidth,
+                title={CPU usage},
+                xlabel={Time [sec]},
+                ylabel={CPU usage [\%]},
+                legend pos=south east,
+                ymajorgrids=true,
+                grid style=dashed,
+            ]
+                \addplot[
+                    color=blue
+                    ]
+                coordinates {
+                     (0 , 10.0) (1 , 17.0) (2 , 3.0) (3 , 4.0) (4 , 55.0) (5 , 63.0) (6 , 64.0) (7 , 65.0) (8 , 63.0) (9 , 64.0) (10 , 62.0) (11 , 63.0) (12 , 64.0) (13 , 64.0) (14 , 65.0) (15 , 63.0) (16 , 14.0) (17 , 7.0)
+
+                };
+                \addlegendentry{original}
+                \addplot[
+                    color=red
+                    ]
+                coordinates {
+                     (0 , 10.0) (1 , 15.0) (2 , 2.0) (3 , 4.0) (4 , 53.0) (5 , 63.0) (6 , 63.0) (7 , 67.0) (8 , 62.0) (9 , 62.0) (10 , 62.0) (11 , 63.0) (12 , 64.0) (13 , 64.0) (14 , 65.0) (15 , 63.0) (16 , 33.0) (17 , 7.0) (18 , 8.0)
+
+                };
+                \addlegendentry{slim}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{tikzpicture}
+            \begin{axis}[
+                smooth,
+                width=0.4*\textwidth,
+                title={Memory+Swap usage},
+                xlabel={Time [sec]},
+                ylabel={Memory used [MB]},
+                legend pos=north east,
+                ymajorgrids=true,
+                grid style=dashed,
+            ]
+                \addplot[
+                    color=blue
+                    ]
+                coordinates {
+                     (0 , 9717.0) (1 , 9820.0) (2 , 9774.0) (3 , 9741.0) (4 , 9743.0) (5 , 9742.0) (6 , 9741.0) (7 , 9742.0) (8 , 9740.0) (9 , 9738.0) (10 , 9738.0) (11 , 9738.0) (12 , 9738.0) (13 , 9738.0) (14 , 9741.0) (15 , 9741.0) (16 , 9755.0) (17 , 9752.0)
+
+                };
+                \addlegendentry{original}
+                \addplot[
+                    color=red
+                    ]
+                coordinates {
+                     (0 , 9713.0) (1 , 9823.0) (2 , 9802.0) (3 , 9752.0) (4 , 9763.0) (5 , 9764.0) (6 , 9764.0) (7 , 9760.0) (8 , 9759.0) (9 , 9755.0) (10 , 9752.0) (11 , 9755.0) (12 , 9748.0) (13 , 9749.0) (14 , 9758.0) (15 , 9755.0) (16 , 9751.0) (17 , 9747.0) (18 , 9738.0)
+
+                };
+                \addlegendentry{slim}
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \caption{System CPU and memory usage for memcached}
+\end{figure}
+
+\end{document}

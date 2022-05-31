@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  postgres:
+    image: postgres:14.3
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+  tester:
+    image: postgres:14.3
+    entrypoint:
+      - bash
+      - -c
+      - "sleep 3; pgbench -i -U postgres -h postgres -s 50 postgres && pgbench -U postgres -h postgres -c 30 -t 10000 postgres"

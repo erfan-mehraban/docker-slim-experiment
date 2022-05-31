@@ -12,7 +12,7 @@
     "fan": {
       "monitor_pid": 1,
       "monitor_ppid": 0,
-      "event_count": 403,
+      "event_count": 399,
       "main_process": {
         "pid": 20,
         "name": "docker-slim-sen",
@@ -54,7 +54,7 @@
           "pid": 23,
           "name": "docker-entrypoi",
           "path": "/usr/bin/bash",
-          "cmd": "",
+          "cmd": "/bin/bash /usr/local/bin/docker-entrypoint.sh mongod",
           "cwd": "/",
           "root": "/",
           "ppid": 20
@@ -77,6 +77,15 @@
           "root": "/",
           "ppid": 20
         },
+        "33": {
+          "pid": 33,
+          "name": "docker-entrypoi",
+          "path": "/usr/bin/bash",
+          "cmd": "/bin/bash /usr/local/bin/docker-entrypoint.sh mongod",
+          "cwd": "/",
+          "root": "/",
+          "ppid": 20
+        },
         "34": {
           "pid": 34,
           "name": "docker-entrypoi",
@@ -86,17 +95,8 @@
           "root": "/",
           "ppid": 20
         },
-        "35": {
-          "pid": 35,
-          "name": "docker-entrypoi",
-          "path": "/usr/bin/bash",
-          "cmd": "/bin/bash /usr/local/bin/docker-entrypoint.sh mongod",
-          "cwd": "/",
-          "root": "/",
-          "ppid": 20
-        },
-        "37": {
-          "pid": 37,
+        "36": {
+          "pid": 36,
           "name": "docker-entrypoi",
           "path": "/usr/bin/bash",
           "cmd": "/bin/bash /usr/local/bin/docker-entrypoint.sh mongod",
@@ -109,301 +109,301 @@
         "20": {
           "/etc/group": {
             "event_count": 2,
-            "first_eid": 115,
+            "first_eid": 112,
             "reads": 1
           },
           "/etc/ld.so.cache": {
             "event_count": 6,
-            "first_eid": 9
+            "first_eid": 7
           },
           "/etc/lsb-release": {
-            "event_count": 2,
-            "first_eid": 395,
-            "reads": 1
-          },
-          "/etc/nsswitch.conf": {
-            "event_count": 4,
-            "first_eid": 22,
-            "reads": 2
-          },
-          "/etc/passwd": {
-            "event_count": 6,
-            "first_eid": 27,
-            "reads": 3
-          },
-          "/etc/ssl/openssl.cnf": {
-            "event_count": 4,
-            "first_eid": 400,
-            "reads": 3
-          },
-          "/usr/bin/bash": {
-            "event_count": 7,
-            "first_eid": 3,
-            "reads": 5
-          },
-          "/usr/bin/mongod": {
-            "event_count": 3,
-            "first_eid": 287,
-            "reads": 2
-          },
-          "/usr/bin/numactl": {
-            "event_count": 3,
-            "first_eid": 271,
-            "reads": 2
-          },
-          "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 7,
-            "first_eid": 7,
-            "reads": 6
-          },
-          "/usr/lib/x86_64-linux-gnu/libasn1.so.8.0.0": {
-            "event_count": 2,
-            "first_eid": 377,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.7": {
-            "event_count": 2,
-            "first_eid": 365,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.7": {
-            "event_count": 2,
-            "first_eid": 339,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
-            "event_count": 32,
-            "first_eid": 14,
-            "reads": 28
-          },
-          "/usr/lib/x86_64-linux-gnu/libcom_err.so.2.1": {
-            "event_count": 2,
-            "first_eid": 357,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0": {
-            "event_count": 2,
-            "first_eid": 393,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
-            "event_count": 2,
-            "first_eid": 299,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libcurl.so.4.6.0": {
-            "event_count": 2,
-            "first_eid": 293,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
-            "event_count": 6,
-            "first_eid": 12,
-            "reads": 3
-          },
-          "/usr/lib/x86_64-linux-gnu/libffi.so.7.1.0": {
-            "event_count": 2,
-            "first_eid": 383,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": {
-            "event_count": 2,
-            "first_eid": 309,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0": {
-            "event_count": 2,
-            "first_eid": 351,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libgnutls.so.30.27.0": {
-            "event_count": 2,
-            "first_eid": 345,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libgssapi.so.3.0.0": {
-            "event_count": 2,
-            "first_eid": 363,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2": {
-            "event_count": 2,
-            "first_eid": 333,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libhcrypto.so.4.1.0": {
-            "event_count": 2,
-            "first_eid": 379,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libheimbase.so.1.0.0": {
-            "event_count": 2,
-            "first_eid": 387,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libheimntlm.so.0.1.0": {
-            "event_count": 2,
-            "first_eid": 373,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libhogweed.so.5.0": {
-            "event_count": 2,
-            "first_eid": 347,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libhx509.so.5.0.0": {
-            "event_count": 2,
-            "first_eid": 389,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6": {
-            "event_count": 2,
-            "first_eid": 325,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1": {
-            "event_count": 2,
-            "first_eid": 355,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libkeyutils.so.1.8": {
-            "event_count": 2,
-            "first_eid": 371,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libkrb5.so.26.0.0": {
-            "event_count": 2,
-            "first_eid": 375,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libkrb5.so.3.3": {
-            "event_count": 2,
-            "first_eid": 353,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1": {
-            "event_count": 2,
-            "first_eid": 359,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/liblber-2.4.so.2.10.12": {
-            "event_count": 2,
-            "first_eid": 337,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2.10.12": {
-            "event_count": 2,
-            "first_eid": 335,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4": {
-            "event_count": 2,
-            "first_eid": 295,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libm-2.31.so": {
-            "event_count": 2,
-            "first_eid": 307,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libnettle.so.7.0": {
-            "event_count": 2,
-            "first_eid": 349,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.19.0": {
-            "event_count": 2,
-            "first_eid": 323,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libnss_files-2.31.so": {
-            "event_count": 4,
-            "first_eid": 25,
-            "reads": 2
-          },
-          "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0": {
-            "event_count": 2,
-            "first_eid": 277,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0": {
-            "event_count": 2,
-            "first_eid": 367,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libpsl.so.5.3.2": {
-            "event_count": 2,
-            "first_eid": 331,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
-            "event_count": 4,
-            "first_eid": 311,
-            "reads": 3
-          },
-          "/usr/lib/x86_64-linux-gnu/libresolv-2.31.so": {
-            "event_count": 2,
-            "first_eid": 297,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libroken.so.18.1.0": {
-            "event_count": 2,
-            "first_eid": 381,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/librt-2.31.so": {
-            "event_count": 2,
-            "first_eid": 305,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/librtmp.so.1": {
-            "event_count": 2,
-            "first_eid": 327,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libsasl2.so.2.0.25": {
-            "event_count": 2,
-            "first_eid": 361,
-            "reads": 1
-          },
-          "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6": {
             "event_count": 2,
             "first_eid": 391,
             "reads": 1
           },
-          "/usr/lib/x86_64-linux-gnu/libssh.so.4.8.4": {
+          "/etc/nsswitch.conf": {
+            "event_count": 4,
+            "first_eid": 20,
+            "reads": 2
+          },
+          "/etc/passwd": {
+            "event_count": 6,
+            "first_eid": 25,
+            "reads": 3
+          },
+          "/etc/ssl/openssl.cnf": {
+            "event_count": 4,
+            "first_eid": 396,
+            "reads": 3
+          },
+          "/usr/bin/bash": {
+            "event_count": 4,
+            "first_eid": 3,
+            "reads": 3
+          },
+          "/usr/bin/mongod": {
+            "event_count": 3,
+            "first_eid": 283,
+            "reads": 2
+          },
+          "/usr/bin/numactl": {
+            "event_count": 3,
+            "first_eid": 268,
+            "reads": 2
+          },
+          "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
+            "event_count": 6,
+            "first_eid": 5,
+            "reads": 5
+          },
+          "/usr/lib/x86_64-linux-gnu/libasn1.so.8.0.0": {
+            "event_count": 2,
+            "first_eid": 373,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.7": {
+            "event_count": 2,
+            "first_eid": 361,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.7": {
+            "event_count": 2,
+            "first_eid": 335,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
+            "event_count": 32,
+            "first_eid": 12,
+            "reads": 28
+          },
+          "/usr/lib/x86_64-linux-gnu/libcom_err.so.2.1": {
+            "event_count": 2,
+            "first_eid": 353,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0": {
+            "event_count": 2,
+            "first_eid": 389,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1": {
+            "event_count": 2,
+            "first_eid": 295,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libcurl.so.4.6.0": {
+            "event_count": 2,
+            "first_eid": 289,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
+            "event_count": 6,
+            "first_eid": 10,
+            "reads": 3
+          },
+          "/usr/lib/x86_64-linux-gnu/libffi.so.7.1.0": {
+            "event_count": 2,
+            "first_eid": 379,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": {
+            "event_count": 2,
+            "first_eid": 305,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0": {
+            "event_count": 2,
+            "first_eid": 347,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libgnutls.so.30.27.0": {
+            "event_count": 2,
+            "first_eid": 341,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libgssapi.so.3.0.0": {
+            "event_count": 2,
+            "first_eid": 359,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2": {
             "event_count": 2,
             "first_eid": 329,
             "reads": 1
           },
-          "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
+          "/usr/lib/x86_64-linux-gnu/libhcrypto.so.4.1.0": {
             "event_count": 2,
-            "first_eid": 301,
+            "first_eid": 375,
             "reads": 1
           },
-          "/usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.0": {
+          "/usr/lib/x86_64-linux-gnu/libheimbase.so.1.0.0": {
+            "event_count": 2,
+            "first_eid": 383,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libheimntlm.so.0.1.0": {
             "event_count": 2,
             "first_eid": 369,
             "reads": 1
           },
-          "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.2": {
-            "event_count": 4,
-            "first_eid": 10,
-            "reads": 2
-          },
-          "/usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0": {
+          "/usr/lib/x86_64-linux-gnu/libhogweed.so.5.0": {
             "event_count": 2,
             "first_eid": 343,
             "reads": 1
           },
-          "/usr/lib/x86_64-linux-gnu/libwind.so.0.0.0": {
+          "/usr/lib/x86_64-linux-gnu/libhx509.so.5.0.0": {
             "event_count": 2,
             "first_eid": 385,
             "reads": 1
           },
+          "/usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6": {
+            "event_count": 2,
+            "first_eid": 321,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1": {
+            "event_count": 2,
+            "first_eid": 351,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libkeyutils.so.1.8": {
+            "event_count": 2,
+            "first_eid": 367,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libkrb5.so.26.0.0": {
+            "event_count": 2,
+            "first_eid": 371,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libkrb5.so.3.3": {
+            "event_count": 2,
+            "first_eid": 349,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1": {
+            "event_count": 2,
+            "first_eid": 355,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/liblber-2.4.so.2.10.12": {
+            "event_count": 2,
+            "first_eid": 333,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libldap_r-2.4.so.2.10.12": {
+            "event_count": 2,
+            "first_eid": 331,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4": {
+            "event_count": 2,
+            "first_eid": 291,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libm-2.31.so": {
+            "event_count": 2,
+            "first_eid": 303,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libnettle.so.7.0": {
+            "event_count": 2,
+            "first_eid": 345,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.19.0": {
+            "event_count": 2,
+            "first_eid": 319,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libnss_files-2.31.so": {
+            "event_count": 4,
+            "first_eid": 23,
+            "reads": 2
+          },
+          "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0": {
+            "event_count": 2,
+            "first_eid": 273,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0": {
+            "event_count": 2,
+            "first_eid": 363,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libpsl.so.5.3.2": {
+            "event_count": 2,
+            "first_eid": 327,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
+            "event_count": 4,
+            "first_eid": 307,
+            "reads": 3
+          },
+          "/usr/lib/x86_64-linux-gnu/libresolv-2.31.so": {
+            "event_count": 2,
+            "first_eid": 293,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libroken.so.18.1.0": {
+            "event_count": 2,
+            "first_eid": 377,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/librt-2.31.so": {
+            "event_count": 2,
+            "first_eid": 301,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/librtmp.so.1": {
+            "event_count": 2,
+            "first_eid": 323,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libsasl2.so.2.0.25": {
+            "event_count": 2,
+            "first_eid": 357,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6": {
+            "event_count": 2,
+            "first_eid": 387,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libssh.so.4.8.4": {
+            "event_count": 2,
+            "first_eid": 325,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libssl.so.1.1": {
+            "event_count": 2,
+            "first_eid": 297,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.0": {
+            "event_count": 2,
+            "first_eid": 365,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libtinfo.so.6.2": {
+            "event_count": 4,
+            "first_eid": 8,
+            "reads": 2
+          },
+          "/usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0": {
+            "event_count": 2,
+            "first_eid": 339,
+            "reads": 1
+          },
+          "/usr/lib/x86_64-linux-gnu/libwind.so.0.0.0": {
+            "event_count": 2,
+            "first_eid": 381,
+            "reads": 1
+          },
           "/usr/lib/x86_64-linux-gnu/libz.so.1.2.11": {
             "event_count": 2,
-            "first_eid": 341,
+            "first_eid": 337,
             "reads": 1
           },
           "/usr/local/bin/docker-entrypoint.sh": {
@@ -413,335 +413,335 @@
           },
           "/usr/local/bin/gosu": {
             "event_count": 3,
-            "first_eid": 111,
+            "first_eid": 108,
             "reads": 2
           },
           "/usr/share/zoneinfo/Etc/UTC": {
             "event_count": 3,
-            "first_eid": 397,
+            "first_eid": 393,
             "reads": 2
           }
         },
         "21": {
           "/etc/ld.so.cache": {
             "event_count": 1,
-            "first_eid": 37
+            "first_eid": 36
           },
           "/usr/bin/id": {
             "event_count": 3,
-            "first_eid": 32,
+            "first_eid": 30,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 2,
-            "first_eid": 35,
+            "event_count": 3,
+            "first_eid": 33,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 40,
+            "first_eid": 39,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
             "event_count": 2,
-            "first_eid": 50,
+            "first_eid": 49,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0": {
             "event_count": 2,
-            "first_eid": 48,
+            "first_eid": 47,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
             "event_count": 4,
-            "first_eid": 52,
+            "first_eid": 51,
             "reads": 3
           },
           "/usr/lib/x86_64-linux-gnu/libselinux.so.1": {
             "event_count": 2,
-            "first_eid": 38,
+            "first_eid": 37,
             "reads": 1
           }
         },
         "22": {
           "/etc/ld.so.cache": {
             "event_count": 2,
-            "first_eid": 61
+            "first_eid": 60
           },
           "/etc/nsswitch.conf": {
             "event_count": 2,
-            "first_eid": 82,
+            "first_eid": 81,
             "reads": 1
           },
           "/etc/passwd": {
             "event_count": 2,
-            "first_eid": 87,
+            "first_eid": 86,
             "reads": 1
           },
           "/usr/bin/find": {
             "event_count": 3,
-            "first_eid": 56,
+            "first_eid": 55,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
             "event_count": 2,
-            "first_eid": 59,
+            "first_eid": 58,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 66,
+            "first_eid": 65,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
             "event_count": 2,
-            "first_eid": 76,
+            "first_eid": 75,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libm-2.31.so": {
             "event_count": 2,
-            "first_eid": 64,
+            "first_eid": 63,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libnss_files-2.31.so": {
             "event_count": 2,
-            "first_eid": 85,
+            "first_eid": 84,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0": {
             "event_count": 2,
-            "first_eid": 74,
+            "first_eid": 73,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
             "event_count": 4,
-            "first_eid": 78,
+            "first_eid": 77,
             "reads": 3
           },
           "/usr/lib/x86_64-linux-gnu/libselinux.so.1": {
             "event_count": 2,
-            "first_eid": 62,
+            "first_eid": 61,
             "reads": 1
           }
         },
         "23": {
           "/etc/ld.so.cache": {
             "event_count": 2,
-            "first_eid": 95
+            "first_eid": 92
           },
           "/etc/nsswitch.conf": {
             "event_count": 2,
-            "first_eid": 104,
+            "first_eid": 101,
             "reads": 1
           },
           "/etc/passwd": {
             "event_count": 2,
-            "first_eid": 109,
+            "first_eid": 106,
             "reads": 1
           },
           "/usr/bin/chown": {
             "event_count": 3,
-            "first_eid": 89,
+            "first_eid": 88,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 3,
-            "first_eid": 92,
-            "reads": 2
+            "event_count": 1,
+            "first_eid": 91,
+            "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 96,
+            "first_eid": 93,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libnss_files-2.31.so": {
             "event_count": 2,
-            "first_eid": 107,
+            "first_eid": 104,
             "reads": 1
           }
         },
         "30": {
           "/etc/ld.so.cache": {
             "event_count": 1,
-            "first_eid": 151
+            "first_eid": 148
           },
           "/usr/bin/id": {
             "event_count": 3,
-            "first_eid": 147,
+            "first_eid": 143,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 1,
-            "first_eid": 150,
-            "reads": 1
+            "event_count": 2,
+            "first_eid": 146,
+            "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 154,
+            "first_eid": 151,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
             "event_count": 2,
-            "first_eid": 164,
+            "first_eid": 161,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0": {
             "event_count": 2,
-            "first_eid": 162,
+            "first_eid": 159,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
             "event_count": 4,
-            "first_eid": 166,
+            "first_eid": 163,
             "reads": 3
           },
           "/usr/lib/x86_64-linux-gnu/libselinux.so.1": {
             "event_count": 2,
-            "first_eid": 152,
+            "first_eid": 149,
             "reads": 1
           }
         },
         "31": {
           "/etc/dpkg/dpkg.cfg": {
             "event_count": 2,
-            "first_eid": 199,
+            "first_eid": 195,
             "reads": 1
           },
           "/etc/dpkg/dpkg.cfg.d/docker-apt-speedup": {
             "event_count": 2,
-            "first_eid": 195,
+            "first_eid": 191,
             "reads": 1
           },
           "/etc/dpkg/dpkg.cfg.d/excludes": {
             "event_count": 2,
-            "first_eid": 197,
+            "first_eid": 193,
             "reads": 1
           },
           "/etc/ld.so.cache": {
             "event_count": 1,
-            "first_eid": 176
+            "first_eid": 172
           },
           "/usr/bin/dpkg": {
             "event_count": 3,
-            "first_eid": 171,
+            "first_eid": 168,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 2,
-            "first_eid": 174,
-            "reads": 2
+            "event_count": 1,
+            "first_eid": 171,
+            "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 179,
+            "first_eid": 175,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
             "event_count": 2,
-            "first_eid": 189,
+            "first_eid": 185,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0": {
             "event_count": 2,
-            "first_eid": 187,
+            "first_eid": 183,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
             "event_count": 4,
-            "first_eid": 191,
+            "first_eid": 187,
             "reads": 3
           },
           "/usr/lib/x86_64-linux-gnu/libselinux.so.1": {
             "event_count": 2,
-            "first_eid": 177,
+            "first_eid": 173,
             "reads": 1
           }
         },
-        "34": {
+        "33": {
           "/etc/ld.so.cache": {
             "event_count": 1,
-            "first_eid": 206
+            "first_eid": 202
           },
           "/usr/bin/grep": {
             "event_count": 3,
-            "first_eid": 202,
+            "first_eid": 198,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
             "event_count": 1,
-            "first_eid": 205,
+            "first_eid": 201,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 211,
+            "first_eid": 207,
             "reads": 7
           },
           "/usr/lib/x86_64-linux-gnu/libdl-2.31.so": {
             "event_count": 2,
-            "first_eid": 209,
+            "first_eid": 205,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpcre.so.3.13.3": {
             "event_count": 2,
-            "first_eid": 207,
+            "first_eid": 203,
             "reads": 1
           },
           "/usr/lib/x86_64-linux-gnu/libpthread-2.31.so": {
             "event_count": 4,
-            "first_eid": 219,
+            "first_eid": 215,
             "reads": 3
           }
         },
-        "35": {
+        "34": {
           "/etc/ld.so.cache": {
             "event_count": 2,
-            "first_eid": 228
+            "first_eid": 226
           },
           "/usr/bin/numactl": {
             "event_count": 3,
-            "first_eid": 224,
+            "first_eid": 220,
             "reads": 2
           },
           "/usr/bin/true": {
             "event_count": 3,
-            "first_eid": 239,
+            "first_eid": 237,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
-            "event_count": 3,
-            "first_eid": 227,
+            "event_count": 4,
+            "first_eid": 223,
             "reads": 3
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 16,
-            "first_eid": 231,
+            "first_eid": 229,
             "reads": 14
           },
           "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0": {
             "event_count": 2,
-            "first_eid": 229,
+            "first_eid": 227,
             "reads": 1
           }
         },
-        "37": {
+        "36": {
           "/etc/ld.so.cache": {
             "event_count": 1,
-            "first_eid": 261
+            "first_eid": 258
           },
           "/usr/bin/rm": {
             "event_count": 3,
-            "first_eid": 256,
+            "first_eid": 253,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/ld-2.31.so": {
             "event_count": 2,
-            "first_eid": 259,
+            "first_eid": 256,
             "reads": 2
           },
           "/usr/lib/x86_64-linux-gnu/libc-2.31.so": {
             "event_count": 8,
-            "first_eid": 262,
+            "first_eid": 259,
             "reads": 7
           }
         }
@@ -750,18 +750,18 @@
     "pt": {
       "enabled": true,
       "arch_name": "amd64",
-      "syscall_count": 660283,
-      "syscall_num": 98,
+      "syscall_count": 678323,
+      "syscall_num": 97,
       "syscall_stats": {
         "0": {
           "num": 0,
           "name": "read",
-          "count": 454
+          "count": 471
         },
         "1": {
           "num": 1,
           "name": "write",
-          "count": 132014
+          "count": 135403
         },
         "10": {
           "num": 10,
@@ -826,7 +826,7 @@
         "128": {
           "num": 128,
           "name": "rt_sigtimedwait",
-          "count": 38
+          "count": 37
         },
         "13": {
           "num": 13,
@@ -841,7 +841,7 @@
         "137": {
           "num": 137,
           "name": "statfs",
-          "count": 360
+          "count": 387
         },
         "138": {
           "num": 138,
@@ -881,7 +881,7 @@
         "18": {
           "num": 18,
           "name": "pwrite64",
-          "count": 408
+          "count": 413
         },
         "186": {
           "num": 186,
@@ -891,17 +891,17 @@
         "20": {
           "num": 20,
           "name": "writev",
-          "count": 4
+          "count": 3
         },
         "202": {
           "num": 202,
           "name": "futex",
-          "count": 7021
+          "count": 7051
         },
         "204": {
           "num": 204,
           "name": "sched_getaffinity",
-          "count": 18
+          "count": 19
         },
         "21": {
           "num": 21,
@@ -921,7 +921,7 @@
         "219": {
           "num": 219,
           "name": "restart_syscall",
-          "count": 871
+          "count": 861
         },
         "22": {
           "num": 22,
@@ -946,7 +946,7 @@
         "232": {
           "num": 232,
           "name": "epoll_wait",
-          "count": 112663
+          "count": 115758
         },
         "233": {
           "num": 233,
@@ -966,12 +966,12 @@
         "24": {
           "num": 24,
           "name": "sched_yield",
-          "count": 5800
+          "count": 7090
         },
         "257": {
           "num": 257,
           "name": "openat",
-          "count": 586
+          "count": 595
         },
         "260": {
           "num": 260,
@@ -1003,11 +1003,6 @@
           "name": "madvise",
           "count": 33
         },
-        "281": {
-          "num": 281,
-          "name": "epoll_pwait",
-          "count": 1
-        },
         "283": {
           "num": 283,
           "name": "timerfd_create",
@@ -1031,7 +1026,7 @@
         "3": {
           "num": 3,
           "name": "close",
-          "count": 640
+          "count": 649
         },
         "302": {
           "num": 302,
@@ -1051,12 +1046,12 @@
         "35": {
           "num": 35,
           "name": "nanosleep",
-          "count": 40
+          "count": 44
         },
         "39": {
           "num": 39,
           "name": "getpid",
-          "count": 153
+          "count": 157
         },
         "4": {
           "num": 4,
@@ -1081,12 +1076,12 @@
         "46": {
           "num": 46,
           "name": "sendmsg",
-          "count": 131657
+          "count": 135046
         },
         "47": {
           "num": 47,
           "name": "recvmsg",
-          "count": 263386
+          "count": 270164
         },
         "48": {
           "num": 48,
@@ -1101,7 +1096,7 @@
         "5": {
           "num": 5,
           "name": "fstat",
-          "count": 325
+          "count": 327
         },
         "50": {
           "num": 50,
@@ -1141,7 +1136,7 @@
         "6": {
           "num": 6,
           "name": "lstat",
-          "count": 20
+          "count": 19
         },
         "61": {
           "num": 61,
@@ -1176,7 +1171,7 @@
         "75": {
           "num": 75,
           "name": "fdatasync",
-          "count": 317
+          "count": 321
         },
         "77": {
           "num": 77,
@@ -1236,7 +1231,7 @@
         "98": {
           "num": 98,
           "name": "getrusage",
-          "count": 14
+          "count": 15
         },
         "99": {
           "num": 99,
@@ -1246,15 +1241,15 @@
       },
       "fs_activity": {
         "/data/configdb": {
-          "ops_all": 14,
-          "ops_checkfile": 14,
+          "ops_all": 15,
+          "ops_checkfile": 15,
           "syscalls": {
             "137": {},
             "257": {}
           },
           "pids": {
             "22": {},
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
@@ -1288,7 +1283,7 @@
           },
           "pids": {
             "20": {},
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
@@ -1312,7 +1307,7 @@
           },
           "pids": {
             "20": {},
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
@@ -1327,7 +1322,7 @@
           },
           "is_subdir": false
         },
-        "/data/db/collection-0--4855764866965807959.wt": {
+        "/data/db/collection-0--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
@@ -1338,18 +1333,18 @@
           },
           "is_subdir": false
         },
-        "/data/db/collection-15--4855764866965807959.wt": {
+        "/data/db/collection-15--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-2--4855764866965807959.wt": {
+        "/data/db/collection-2--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
@@ -1360,84 +1355,84 @@
           },
           "is_subdir": false
         },
-        "/data/db/collection-22--4855764866965807959.wt": {
+        "/data/db/collection-22--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-28--4855764866965807959.wt": {
+        "/data/db/collection-28--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-35--4855764866965807959.wt": {
+        "/data/db/collection-35--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-4--4855764866965807959.wt": {
+        "/data/db/collection-4--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "69": {}
+            "68": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-45--4855764866965807959.wt": {
+        "/data/db/collection-45--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-7--4855764866965807959.wt": {
+        "/data/db/collection-7--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/collection-9--4855764866965807959.wt": {
+        "/data/db/collection-9--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/diagnostic.data/metrics.2022-05-28T08-09-35Z-00000": {
+        "/data/db/diagnostic.data/metrics.2022-05-30T19-21-19Z-00000": {
           "ops_all": 4,
           "ops_checkfile": 4,
           "syscalls": {
@@ -1445,11 +1440,11 @@
             "4": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-1--4855764866965807959.wt": {
+        "/data/db/index-1--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
@@ -1460,119 +1455,119 @@
           },
           "is_subdir": false
         },
-        "/data/db/index-10--4855764866965807959.wt": {
+        "/data/db/index-10--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-11--4855764866965807959.wt": {
+        "/data/db/index-11--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-13--4855764866965807959.wt": {
+        "/data/db/index-13--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-16--4855764866965807959.wt": {
+        "/data/db/index-16--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-17--4855764866965807959.wt": {
+        "/data/db/index-17--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-20--4855764866965807959.wt": {
+        "/data/db/index-20--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-23--4855764866965807959.wt": {
+        "/data/db/index-23--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-24--4855764866965807959.wt": {
+        "/data/db/index-24--3753536826447957598.wt": {
           "ops_all": 4,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {},
-            "91": {}
+            "82": {},
+            "92": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-26--4855764866965807959.wt": {
+        "/data/db/index-26--3753536826447957598.wt": {
           "ops_all": 4,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {},
-            "91": {}
+            "82": {},
+            "93": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-29--4855764866965807959.wt": {
+        "/data/db/index-29--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-3--4855764866965807959.wt": {
+        "/data/db/index-3--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
@@ -1583,173 +1578,173 @@
           },
           "is_subdir": false
         },
-        "/data/db/index-30--4855764866965807959.wt": {
+        "/data/db/index-30--3753536826447957598.wt": {
           "ops_all": 4,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {},
-            "95": {}
+            "82": {},
+            "96": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-33--4855764866965807959.wt": {
+        "/data/db/index-33--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-36--4855764866965807959.wt": {
+        "/data/db/index-36--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-37--4855764866965807959.wt": {
+        "/data/db/index-37--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-39--4855764866965807959.wt": {
+        "/data/db/index-39--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-41--4855764866965807959.wt": {
+        "/data/db/index-41--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-43--4855764866965807959.wt": {
+        "/data/db/index-43--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-46--4855764866965807959.wt": {
+        "/data/db/index-46--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-47--4855764866965807959.wt": {
+        "/data/db/index-47--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-49--4855764866965807959.wt": {
+        "/data/db/index-49--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-5--4855764866965807959.wt": {
+        "/data/db/index-5--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "69": {}
+            "68": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-51--4855764866965807959.wt": {
+        "/data/db/index-51--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-53--4855764866965807959.wt": {
+        "/data/db/index-53--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-6--4855764866965807959.wt": {
+        "/data/db/index-6--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "69": {}
+            "68": {}
           },
           "is_subdir": false
         },
-        "/data/db/index-8--4855764866965807959.wt": {
+        "/data/db/index-8--3753536826447957598.wt": {
           "ops_all": 2,
           "ops_checkfile": 1,
           "syscalls": {
             "257": {}
           },
           "pids": {
-            "74": {}
+            "75": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-12--4855764866965807959.wt": {
+        "/data/db/internal-12--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1757,11 +1752,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-14--4855764866965807959.wt": {
+        "/data/db/internal-14--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1769,11 +1764,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-18--4855764866965807959.wt": {
+        "/data/db/internal-18--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1781,11 +1776,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-19--4855764866965807959.wt": {
+        "/data/db/internal-19--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1793,11 +1788,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-21--4855764866965807959.wt": {
+        "/data/db/internal-21--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1805,11 +1800,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-25--4855764866965807959.wt": {
+        "/data/db/internal-25--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1817,11 +1812,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-27--4855764866965807959.wt": {
+        "/data/db/internal-27--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1829,11 +1824,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-31--4855764866965807959.wt": {
+        "/data/db/internal-31--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1841,11 +1836,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-32--4855764866965807959.wt": {
+        "/data/db/internal-32--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1853,11 +1848,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-34--4855764866965807959.wt": {
+        "/data/db/internal-34--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1865,11 +1860,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-38--4855764866965807959.wt": {
+        "/data/db/internal-38--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1877,11 +1872,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-40--4855764866965807959.wt": {
+        "/data/db/internal-40--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1889,11 +1884,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-42--4855764866965807959.wt": {
+        "/data/db/internal-42--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1901,11 +1896,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-44--4855764866965807959.wt": {
+        "/data/db/internal-44--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1913,11 +1908,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-48--4855764866965807959.wt": {
+        "/data/db/internal-48--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1925,11 +1920,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-50--4855764866965807959.wt": {
+        "/data/db/internal-50--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1937,11 +1932,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-52--4855764866965807959.wt": {
+        "/data/db/internal-52--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1949,11 +1944,11 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
-        "/data/db/internal-54--4855764866965807959.wt": {
+        "/data/db/internal-54--3753536826447957598.wt": {
           "ops_all": 3,
           "ops_checkfile": 2,
           "syscalls": {
@@ -1961,7 +1956,7 @@
             "4": {}
           },
           "pids": {
-            "81": {}
+            "82": {}
           },
           "is_subdir": false
         },
@@ -1994,7 +1989,7 @@
             "257": {}
           },
           "pids": {
-            "46": {}
+            "45": {}
           },
           "is_subdir": false
         },
@@ -2005,7 +2000,7 @@
             "257": {}
           },
           "pids": {
-            "46": {}
+            "45": {}
           },
           "is_subdir": false
         },
@@ -2043,13 +2038,13 @@
           "is_subdir": false
         },
         "/dev": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
@@ -2098,24 +2093,24 @@
           "is_subdir": false
         },
         "/etc/hostname": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
         "/etc/hosts": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
@@ -2132,9 +2127,9 @@
             "23": {},
             "30": {},
             "31": {},
+            "33": {},
             "34": {},
-            "35": {},
-            "37": {}
+            "36": {}
           },
           "is_subdir": false
         },
@@ -2188,13 +2183,13 @@
           "is_subdir": false
         },
         "/etc/resolv.conf": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
@@ -2244,9 +2239,9 @@
             "23": {},
             "30": {},
             "31": {},
+            "33": {},
             "34": {},
-            "35": {},
-            "37": {}
+            "36": {}
           },
           "is_subdir": false
         },
@@ -2306,7 +2301,7 @@
             "22": {},
             "30": {},
             "31": {},
-            "34": {}
+            "33": {}
           },
           "is_subdir": false
         },
@@ -2585,7 +2580,7 @@
           },
           "pids": {
             "20": {},
-            "35": {}
+            "34": {}
           },
           "is_subdir": false
         },
@@ -2607,7 +2602,7 @@
             "257": {}
           },
           "pids": {
-            "34": {}
+            "33": {}
           },
           "is_subdir": false
         },
@@ -2648,7 +2643,7 @@
             "22": {},
             "30": {},
             "31": {},
-            "34": {}
+            "33": {}
           },
           "is_subdir": false
         },
@@ -2810,35 +2805,35 @@
           "is_subdir": false
         },
         "/opt/dockerslim/artifacts": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
         "/opt/dockerslim/bin": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
         "/sys": {
-          "ops_all": 13,
-          "ops_checkfile": 13,
+          "ops_all": 14,
+          "ops_checkfile": 14,
           "syscalls": {
             "137": {}
           },
           "pids": {
-            "60": {}
+            "59": {}
           },
           "is_subdir": false
         },
@@ -3196,7 +3191,7 @@
         "file_path": "/data/db/WiredTiger.wt",
         "mode": "-rw-------",
         "file_size": 180224,
-        "sha1_hash": "df5b7e2c984135fe335ededf2275e43a7ec5bce8"
+        "sha1_hash": "7757ca2a72bb7245c9546db24b6ca774551cf037"
       },
       {
         "file_type": "File",
@@ -3210,280 +3205,280 @@
         "file_path": "/data/db/_mdb_catalog.wt",
         "mode": "-rw-------",
         "file_size": 36864,
-        "sha1_hash": "b5c46ab865dda4e4dcfe9e177824718a7f53e42f"
+        "sha1_hash": "9422d7b747ddaa9f2f6380b32b0d39c5402b7744"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-0--4855764866965807959.wt",
+        "file_path": "/data/db/collection-0--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "f221fad66e652412be07d9db6f837125e3d77708"
+        "sha1_hash": "79b6e0a5ccdc6ae5472b8979d4dee329cabfd50b"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-15--4855764866965807959.wt",
+        "file_path": "/data/db/collection-15--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 24576,
-        "sha1_hash": "077fb73bac8373e78abb7d3191aaa6f6c3c32c20"
+        "sha1_hash": "0f77f392eb6c7b92e8d2fe71f33fdb33d3ee2556"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-2--4855764866965807959.wt",
+        "file_path": "/data/db/collection-2--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "db08a03c7123b30680d9cb1f2ce26ee77bae7082"
+        "sha1_hash": "e767d9b21b39f76b152e6daf5c7bf00d91ccad85"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-22--4855764866965807959.wt",
+        "file_path": "/data/db/collection-22--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "352ccf0570c3d3f2d23557ec359ed8ef6004dae7"
+        "sha1_hash": "b5d0a8e19d9ca6bcdb2112e24069fcd801eeed60"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-28--4855764866965807959.wt",
+        "file_path": "/data/db/collection-28--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "22ad18169d17c98a4fe2f07ad54ca1145da9df05"
+        "sha1_hash": "d7e8062f054742019c7356bc60e06929efc441a8"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-35--4855764866965807959.wt",
+        "file_path": "/data/db/collection-35--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "6c396b929d591184d3e55ce92bc03c3121204be7"
+        "sha1_hash": "e488432dca2018253602754b3db69249a041fa13"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-4--4855764866965807959.wt",
+        "file_path": "/data/db/collection-4--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 4096,
         "sha1_hash": "ef338c4b8d25224f30566e1ade30a1ca9eb26866"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-45--4855764866965807959.wt",
+        "file_path": "/data/db/collection-45--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "5377288568d2018adcc806f925d3ca85e0f3b271"
+        "sha1_hash": "bb7bcefc1232e6d208806df01b73c8bfdfa25a18"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-7--4855764866965807959.wt",
+        "file_path": "/data/db/collection-7--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 24576,
-        "sha1_hash": "02edd51848f1547a518d78b13a416f1b9ca8fe49"
+        "sha1_hash": "3288bc182eac41fe1d3a2ab2845a935689290906"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/collection-9--4855764866965807959.wt",
+        "file_path": "/data/db/collection-9--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 24576,
-        "sha1_hash": "c96a8988e454d530725e9ac82fa1deab25a716b5"
+        "sha1_hash": "5854481a531f7644dd36e8448b46601106ccc589"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/diagnostic.data/metrics.2022-05-28T08-09-35Z-00000",
+        "file_path": "/data/db/diagnostic.data/metrics.2022-05-30T19-21-19Z-00000",
         "mode": "-rw-------",
-        "file_size": 51647,
-        "sha1_hash": "12efe7233ff23be1e6729137bbd72a0a6e05f8b8"
+        "file_size": 38086,
+        "sha1_hash": "b9a4e86b00d7dc1da0ba67a252e1645f45cc7914"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-1--4855764866965807959.wt",
-        "mode": "-rw-------",
-        "file_size": 20480,
-        "sha1_hash": "a9da7659e4b1686664449c59f37a10e53a3db860"
-      },
-      {
-        "file_type": "File",
-        "file_path": "/data/db/index-10--4855764866965807959.wt",
+        "file_path": "/data/db/index-1--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "df7678fb8fd64951f97b73544acf05e8a5dbdb94"
+        "sha1_hash": "a01f8ac06eadcb65dbb879b14aa8eda1c9790cce"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-11--4855764866965807959.wt",
+        "file_path": "/data/db/index-10--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "5dd2a4cd10100936d3faf33f9b2679dd6134ded6"
+        "sha1_hash": "e9756be3179ee2f4d0783ab821c476825da0e406"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-13--4855764866965807959.wt",
+        "file_path": "/data/db/index-11--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "2921f94e6a0e7bdb0868bcb6339d0a66977755d1"
+        "sha1_hash": "51ee94b91c33a7c345e0692e711c760d381069e5"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-16--4855764866965807959.wt",
+        "file_path": "/data/db/index-13--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "b19563758f4a734ff51762ca3087e0eaa67d2cef"
+        "sha1_hash": "a77b3b0d6eecaae78acd8f3dbf4903551f3b1ae6"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-17--4855764866965807959.wt",
+        "file_path": "/data/db/index-16--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "d344ec17d6f52115f1747b9bce4ca190aa4acf74"
+        "sha1_hash": "55dcdb19a60787f7b28fcb1c902097d171f2c7f2"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-20--4855764866965807959.wt",
+        "file_path": "/data/db/index-17--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "7e88579a705cb3f767e47ed357d4d7fb6e122804"
+        "sha1_hash": "16fd6e13310f41db76bbf42183649acf3d1abbb8"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-23--4855764866965807959.wt",
+        "file_path": "/data/db/index-20--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "0b3061a9693939a89769812e8d67877bd13567bf"
+        "sha1_hash": "5326c59a1d9bc724155aaaa0c2faaca3c7871005"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-24--4855764866965807959.wt",
+        "file_path": "/data/db/index-23--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "1efe8c2a4ed52dd84947edb5531e29d66d0e146c"
+        "sha1_hash": "012a40bc748b2eb92cc45ebda562cd89d5ddfe1b"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-26--4855764866965807959.wt",
+        "file_path": "/data/db/index-24--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "604bd21981c21e4745f0084d61138274a11e3940"
+        "sha1_hash": "3459938f24bf4d09d7129fbf584b1e9d1d8a710d"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-29--4855764866965807959.wt",
+        "file_path": "/data/db/index-26--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "477c130282e645edc32cfdcc488aaa99bf397ed8"
+        "sha1_hash": "dc12689a645454017ebe31235d47a4fb33c0bd4e"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-3--4855764866965807959.wt",
+        "file_path": "/data/db/index-29--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "eefa25b693edbcd74002786bac07cccecb608d34"
+        "sha1_hash": "d8fd29b432e55cbf4e706b46e194002acd360ff4"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-30--4855764866965807959.wt",
+        "file_path": "/data/db/index-3--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "d12b89bec63a7aa1199aba03563b8892f75a368a"
+        "sha1_hash": "35672c3f15a8a0936b46a5ff12458e27001771ec"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-33--4855764866965807959.wt",
+        "file_path": "/data/db/index-30--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "4b1280e455ab905b09ca56b26301865c06ef654b"
+        "sha1_hash": "786556084be51a4fb0d69fccabb6d034258b8344"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-36--4855764866965807959.wt",
+        "file_path": "/data/db/index-33--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "26f1286bbfb04b685ce046e0c4094786d001cb05"
+        "sha1_hash": "7c00241388622c6c76e26f7ea71478127a1d1934"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-37--4855764866965807959.wt",
+        "file_path": "/data/db/index-36--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "95a2b084fa69baaf5f40afa291a37734adc824b3"
+        "sha1_hash": "d5be695c2433f9d8f76210bc9b8bac02c5a1f96c"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-39--4855764866965807959.wt",
+        "file_path": "/data/db/index-37--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "e1af444df8bbf6648e88be05a1ecf5a618ca0dc3"
+        "sha1_hash": "acb334b6f598f1001183ec72bdd706a9e22330cc"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-41--4855764866965807959.wt",
+        "file_path": "/data/db/index-39--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "ed7cb99d6bcdb83e3b7b5081581a97c78e873aa8"
+        "sha1_hash": "45ca2a4833b9a6abf9898940e968b217e03cce1b"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-43--4855764866965807959.wt",
+        "file_path": "/data/db/index-41--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "e551143117d56ea9e553292cd317c971d78e6003"
+        "sha1_hash": "6bd2901cb275d1e46740cc28189a0e7396d27f4a"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-46--4855764866965807959.wt",
+        "file_path": "/data/db/index-43--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "50a763e6b9f50cfa77f21e3b0728f4f80bb8fe5a"
+        "sha1_hash": "aaf560cc45179ce28f0651e02da0b59d1688db45"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-47--4855764866965807959.wt",
+        "file_path": "/data/db/index-46--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "b71447fcd8ce8178b9e5a176027b093183dd7936"
+        "sha1_hash": "100a36e16fa0c8fc2263853ed6b22fcc0a7bb86f"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-49--4855764866965807959.wt",
+        "file_path": "/data/db/index-47--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "08467267152a2d89afca1ceb773aff65d3b8f4e8"
+        "sha1_hash": "c480766af9bab616f51c5b6ffd1bd39f887b4237"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-5--4855764866965807959.wt",
+        "file_path": "/data/db/index-49--3753536826447957598.wt",
+        "mode": "-rw-------",
+        "file_size": 20480,
+        "sha1_hash": "e31f01d14bbaa458f97823100100516035f7c530"
+      },
+      {
+        "file_type": "File",
+        "file_path": "/data/db/index-5--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 4096,
         "sha1_hash": "ef338c4b8d25224f30566e1ade30a1ca9eb26866"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-51--4855764866965807959.wt",
+        "file_path": "/data/db/index-51--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "a7b92d642be05c4a2db7aed7922fe95933c0a0af"
+        "sha1_hash": "0442d3824e864aa6c9ae3d8ebebea3b62935f09d"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-53--4855764866965807959.wt",
+        "file_path": "/data/db/index-53--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "8d2095216879047a9006742019e60ef743cff5ae"
+        "sha1_hash": "4db03e90e72d417704d8e4be37ede7d19eeff169"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-6--4855764866965807959.wt",
+        "file_path": "/data/db/index-6--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 4096,
         "sha1_hash": "ef338c4b8d25224f30566e1ade30a1ca9eb26866"
       },
       {
         "file_type": "File",
-        "file_path": "/data/db/index-8--4855764866965807959.wt",
+        "file_path": "/data/db/index-8--3753536826447957598.wt",
         "mode": "-rw-------",
         "file_size": 20480,
-        "sha1_hash": "564ac6b3587f156df17de05d92bd86736d5ceeb4"
+        "sha1_hash": "de646f282c5fae5415e102d9098a01bc51815c5c"
       },
       {
         "file_type": "File",
         "file_path": "/data/db/journal/WiredTigerLog.0000000001",
         "mode": "-rw-------",
         "file_size": 104857600,
-        "sha1_hash": "2355dcaa0326231828a17acf53be7f7d37860a1d"
+        "sha1_hash": "edfaa318def5176efd559869b193e8a4f6907542"
       },
       {
         "file_type": "File",
@@ -3497,7 +3492,7 @@
         "file_path": "/data/db/sizeStorer.wt",
         "mode": "-rw-------",
         "file_size": 36864,
-        "sha1_hash": "11de5ef18ab47fbc12100a24148b87e561d0b4ed"
+        "sha1_hash": "9364d652d9a2c1398704cfd9f6aea202258f7388"
       },
       null,
       null,
@@ -3546,14 +3541,14 @@
         "file_path": "/etc/hostname",
         "mode": "-rw-r--r--",
         "file_size": 13,
-        "sha1_hash": "13adc4b1628de5186697e214469081a9359f371e"
+        "sha1_hash": "2ab813ce1b792bf5cffedfce4a916691cd8c9a2d"
       },
       {
         "file_type": "File",
         "file_path": "/etc/hosts",
         "mode": "-rw-r--r--",
         "file_size": 174,
-        "sha1_hash": "edd70a702808325e4fb5de2bae2bdf70176632db"
+        "sha1_hash": "3bd466a9035abb03af506696368eda0df1bc2f27"
       },
       {
         "file_type": "File",

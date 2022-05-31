@@ -47,8 +47,8 @@
     ],
     "os": "linux",
     "volumes": [
-      "/data/db",
-      "/data/configdb"
+      "/data/configdb",
+      "/data/db"
     ],
     "env_vars": [
       "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
@@ -64,11 +64,11 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 243309712,
+  "minified_image_size": 243296151,
   "minified_image_size_human": "243 MB",
   "minified_image": "mongo.slim",
   "minified_image_has_data": true,
-  "minified_by": 2.8367197935773314,
+  "minified_by": 2.8368779085206324,
   "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/96c85f49715a19320f201ed70f73f8ce67962200a3e798dec12111fac170b6da/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "mongo-seccomp.json",

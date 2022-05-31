@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  memcached:
+    image: memcached:1.6.15
+  tester:
+    image: redislabs/memtier_benchmark
+    entrypoint:
+      - bash
+      - -c
+      - 'sleep 2; memtier_benchmark -s memcached -n 50000 -P memcache_text -p 11211' 

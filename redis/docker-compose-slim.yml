@@ -2,15 +2,3 @@ version: '3.3'
 services:
   redis:
     image: redis.slim:latest
-  tester:
-    image: redis:7.0.0
-    entrypoint:
-      - redis-benchmark
-      - -h
-      - redis
-      - -c
-      - '100'
-      - -d
-      - '5'
-      - -n
-      - '400000'

@@ -59,11 +59,11 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 194957347,
-  "minified_image_size_human": "195 MB",
+  "minified_image_size": 207235253,
+  "minified_image_size_human": "207 MB",
   "minified_image": "postgres.slim",
   "minified_image_has_data": true,
-  "minified_by": 0.9679905984769068,
+  "minified_by": 0.9106408116769592,
   "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/ea498678e2bdf1e6e57e25a37555e217c0aaed625ad65742fa783e8141e9613d/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "postgres-seccomp.json",

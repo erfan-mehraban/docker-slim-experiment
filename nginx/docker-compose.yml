@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  nginx:
+    image: nginx:1.22.0
+  tester:
+    image: nginx:1.22.0
+    entrypoint:
+      - bash
+      - -c
+      - 'for i in {1..30}; do for i in {1..1000}; do curl --silent --output /dev/null nginx:80 & done; sleep 0.1; done'
