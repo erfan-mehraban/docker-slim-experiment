@@ -1,3 +1,5 @@
+# usage: python3 render-dstat-charts-to-latex.py redis/
+
 from sys import argv
 from decimal import Decimal
 from collections import defaultdict
